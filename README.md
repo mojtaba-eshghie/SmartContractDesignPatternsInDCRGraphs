@@ -45,5 +45,7 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 
 ## [Secure Ether Transfer](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#secure-ether-transfer)
 
+## [Oracle](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#oracle)
+
 
 
