@@ -1,7 +1,7 @@
 # Solidity Design Patterns Modeled by DCR Graphs
 A collection of DCR graphs model of popular design patterns in Solidity smart contracts.
 
-## [Commit and Reveal Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#commit-reveal)
+## [Commit and Reveal](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#commit-reveal)
 
 ## [Pull over push](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#pull-over-push)
 
@@ -19,11 +19,9 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 [Download safe self destruction pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/safe-self-destruction.xml)
 ![Safe Self Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/safe-self-destruction.svg)
 
-## [Proxy-Delegate-Relayer](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#proxy-delegate-relayer)
+## [Proxy,Delegate,Relayer](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#proxy-delegate-relayer)
 
 ## [Finite State Automata](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#fsa)
-
-## [Commit and Reveal](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#commit-and-reveal)
 
 ## [Automatic Deprecation](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#auto-deprecation)
 
