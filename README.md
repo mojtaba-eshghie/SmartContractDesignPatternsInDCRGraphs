@@ -47,7 +47,38 @@ abstract contract Ballot {
 
 ## [Commit and Reveal](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#commit-reveal)
 ![Commit and Reveal Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/commit-and-reveal.svg)
+```
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.0; 
 
+// Use hash for 3 for instance: 0xc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b
+
+contract CommitRevealPattern {
+    bytes32 private hashedNumber;
+    bool public commitStatus;
+    bool public won;
+    constructor () {
+        commitStatus = false;
+        won = false;
+    }
+    modifier isCommitted() {
+        require(commitStatus);
+        _;
+    }
+    modifier isNotCommitted() {
+        require(!commitStatus);
+        _;
+    }
+    function commit(bytes32 _hashedNumber) external isNotCommitted returns(bool) {
+        hashedNumber = _hashedNumber;
+        commitStatus = true;
+    } 
+    function reveal(uint256 secret) external isCommitted returns (bytes32){
+        require(hashedNumber == keccak256(abi.encodePacked(secret)));
+        won = true;
+    }
+}
+```
 [Download commit and reveal pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/commit-and-reveal.xml)
 
 
