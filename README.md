@@ -2,7 +2,6 @@
 A collection of DCR graphs model of popular design patterns in Solidity smart contracts.
 
 ## [Time Locking](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-locking)
-[Download time locking pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/time-locking.xml)
 ![Time Locking Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/time-locking.svg)
 ```
 pragma solidity >=0.8.0; 
@@ -23,6 +22,8 @@ abstract contract Ballot {
     function downVote() virtual internal;
 }
 ```
+[Download time locking pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/time-locking.xml)
+
 
 ## [Time Incentivizing](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-incentivizing)
 
