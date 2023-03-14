@@ -31,6 +31,14 @@ abstract contract Ballot {
 [Download time incentivizing DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/time-incentivizing.xml)
 
 ## [Automatic Deprecation](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#auto-deprecation)
+![Automatic Deprecation Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/automatic-deprecation-1.svg)
+
+[Download automatic deprecation (1) DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/automatic-deprecation-1.xml)
+
+![Automatic Deprecation Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/automatic-deprecation-2.svg)
+
+[Download automatic deprecation (2) DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/automatic-deprecation-2.xml)
+
 
 ## [Rate Limiting](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#rate-limiting)
 
