@@ -15,7 +15,9 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 
 ## [Time Locking](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-locking)
 
-## [Safe Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#safe-destruction)
+## [Safe Self-Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#safe-self-destruction)
+[Download access control pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/access-control.xml)
+![myImage](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/access-control.svg)
 
 ## [Proxy-Delegate-Relayer](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#proxy-delegate-relayer)
 
