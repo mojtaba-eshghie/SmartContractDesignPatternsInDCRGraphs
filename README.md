@@ -41,10 +41,15 @@ abstract contract Ballot {
 ![Safe Self Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/safe-self-destruction.svg)
 
 ## [Access Control](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#access-control)
+![Access Control Smart Contract Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/access-control.svg)
+
 [Download access control pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/access-control.xml)
-![myImage](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/access-control.svg)
 
 ## [Commit and Reveal](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#commit-reveal)
+![Commit and Reveal Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/commit-and-reveal.svg)
+
+[Download commit and reveal pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/commit-and-reveal.xml)
+
 
 ## [Circuit Breaker / Emergency Stop](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#circuit-breaker)
 
@@ -53,6 +58,9 @@ abstract contract Ballot {
 ## [Checks, Effects, Interactions](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#checks-effects-interactions)
 
 ## [Mutex](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#mutex)
+![Mutex Design Pattern DCR Graph Model for Ethereum Smart Contracts](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/mutex.svg)
+
+[Download mutex pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/mutex.xml)
 
 ## [Guard Check](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#guard-check)
 
