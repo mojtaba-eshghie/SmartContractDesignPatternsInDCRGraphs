@@ -98,6 +98,9 @@ contract CommitRevealPattern {
 [Download circuit breaker pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/circuit-breaker-milestone.xml)
 
 ## [Escapable](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#escapable)
+![Escapable Blockchain Smart Contract Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/escapable.svg)
+
+[Download escapable pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/escapable.xml)
 
 ## [Checks, Effects, Interactions](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#checks-effects-interactions)
 
