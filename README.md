@@ -41,6 +41,9 @@ abstract contract Ballot {
 
 
 ## [Rate Limiting](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#rate-limiting)
+![Rate Limiting Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/rate-limiting.svg)
+
+[Download rate limiting DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/rate-limiting.xml)
 
 ## [Speed Bump (timed temporal-constrained)](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#speed-bump)
 [Download speed bump pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/speed-bump.xml)
