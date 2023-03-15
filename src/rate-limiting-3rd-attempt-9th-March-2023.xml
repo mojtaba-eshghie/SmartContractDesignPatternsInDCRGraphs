@@ -1,0 +1,201 @@
+<dcrgraph title="rate-limiting-3rd-attempt-9th-March-2023" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="4" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+    <meta>
+        <graph id="1621630" hash="60B2B25A6C37A8D1472EDA7DCB19AA74" guid="A18F852E-927D-4D13-BE3A-CF77D2B2D08B" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3127365" type="minor" date="2023-03-09T14:56:24.637"/>
+        <organization id="1" name="Community"/>
+    </meta>
+    <specification>
+        <resources>
+            <events>
+                <event id="withdraw" type="subprocess">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="525" yLoc="125"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>2</sequence>
+                        <costs>0</costs>
+                        <eventData/>
+                        <interfaces/>
+                    </custom>
+                    <event id="currentPeriodAmount" computation="currentPeriodAmount-computation">
+                        <precondition message=""/>
+                        <custom>
+                            <visualization>
+                                <location xLoc="550" yLoc="175"/>
+                                <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                            </visualization>
+                            <roles>
+                                <role/>
+                            </roles>
+                            <readRoles>
+                                <readRole/>
+                            </readRoles>
+                            <groups>
+                                <group/>
+                            </groups>
+                            <phases>
+                                <phase/>
+                            </phases>
+                            <eventType/>
+                            <eventScope>private</eventScope>
+                            <eventTypeData/>
+                            <eventDescription/>
+                            <purpose/>
+                            <guide/>
+                            <insight use="false"/>
+                            <level>1</level>
+                            <sequence>4</sequence>
+                            <costs>0</costs>
+                            <eventData/>
+                            <interfaces/>
+                        </custom>
+                    </event>
+                </event>
+                <event id="currentPeriodEnd" computation="currentPeriodEnd-computation">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="850" yLoc="175"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>5</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="5" width="small" placeholder="" hinttext="" dataSetList="" dataSetActivity="" multiple="false" format="int">choice</dataType>
+                            <dictionary>
+                                <item label="Item 1" value="1"/>
+                                <item label="Item 2" value="2"/>
+                            </dictionary>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
+            </events>
+            <subProcesses/>
+            <distribution/>
+            <labels>
+                <label id="withdraw"/>
+                <label id="currentPeriodAmount"/>
+                <label id="currentPeriodEnd"/>
+            </labels>
+            <labelMappings>
+                <labelMapping eventId="withdraw" labelId="withdraw"/>
+                <labelMapping eventId="currentPeriodAmount" labelId="currentPeriodAmount"/>
+                <labelMapping eventId="currentPeriodEnd" labelId="currentPeriodEnd"/>
+            </labelMappings>
+            <expressions>
+                <expression id="withdraw-path-currentPeriodAmount--include" value="currentPeriodAmount + 1 &lt; 4"/>
+                <expression id="withdraw-path-currentPeriodAmount--exclude" value="not(currentPeriodAmount + 1 &lt; 4)"/>
+                <expression id="withdraw-path-currentPeriodEnd--include" value="currentPeriodEnd  &lt; now"/>
+                <expression id="withdraw-path-currentPeriodEnd--exclude" value="not(currentPeriodEnd  &lt; now)"/>
+                <expression id="currentPeriodAmount-computation" value="currentPeriodAmount + 1"/>
+                <expression id="currentPeriodEnd-computation" value="now + P1D"/>
+            </expressions>
+            <variables/>
+            <variableAccesses>
+                <writeAccesses/>
+            </variableAccesses>
+            <custom>
+                <keywords/>
+                <roles/>
+                <groups/>
+                <phases/>
+                <eventTypes/>
+                <eventParameters/>
+                <graphDetails>DCR Process</graphDetails>
+                <graphDocumentation/>
+                <graphLanguage>en-US</graphLanguage>
+                <graphDomain>process</graphDomain>
+                <graphFilters>
+                    <filteredGroups/>
+                    <filteredRoles/>
+                    <filteredPhases/>
+                </graphFilters>
+                <hightlighterMarkup id="HLM"/>
+                <highlighterMarkup>
+                    <highlightLayers/>
+                    <highlights/>
+                </highlighterMarkup>
+            </custom>
+        </resources>
+        <constraints>
+            <conditions/>
+            <responses>
+                <response sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups=""/>
+                <response sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups=""/>
+            </responses>
+            <coresponses/>
+            <excludes>
+                <exclude sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodAmount--exclude" link="withdraw--include--withdraw.currentPeriodAmount"/>
+                <exclude sourceId="currentPeriodAmount" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups=""/>
+                <exclude sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodEnd--exclude" link="withdraw--include--currentPeriodEnd"/>
+                <exclude sourceId="currentPeriodEnd" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups=""/>
+            </excludes>
+            <includes>
+                <include sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodAmount--include" link="withdraw--include--withdraw.currentPeriodAmount"/>
+                <include sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodEnd--include" link="withdraw--include--currentPeriodEnd"/>
+                <include sourceId="currentPeriodEnd" targetId="withdraw" filterLevel="1" description="" time="" groups=""/>
+            </includes>
+            <milestones/>
+            <updates/>
+            <spawns/>
+            <templateSpawns/>
+        </constraints>
+    </specification>
+    <runtime>
+        <custom>
+            <globalMarking/>
+        </custom>
+        <marking>
+            <globalStore/>
+            <executed/>
+            <included>
+                <event id="currentPeriodEnd"/>
+            </included>
+            <pendingResponses/>
+        </marking>
+    </runtime>
+</dcrgraph>
