@@ -1,7 +1,7 @@
-<dcrgraph title="mutex-17-March" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+<dcrgraph title="mutex" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1622484" hash="F8C24A43F435890E10D4AAAD7C76E9FD" guid="5170CF14-8A54-47A9-83FD-0130C66B3B30" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
-        <revision id="3139496" type="minor" date="2023-03-17T15:53:13.037"/>
+        <graph id="1622484" hash="D678BADA3FA660248DCF307DC4DD39E2" guid="5170CF14-8A54-47A9-83FD-0130C66B3B30" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3139555" type="minor" date="2023-03-17T16:03:25.260"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
@@ -73,7 +73,7 @@
                         <interfaces/>
                     </custom>
                 </event>
-                <event id="Activity2">
+                <event id="lock">
                     <precondition message=""/>
                     <custom>
                         <visualization>
@@ -120,10 +120,11 @@
             <labelMappings>
                 <labelMapping eventId="Activity0" labelId="requestWithdraw"/>
                 <labelMapping eventId="Activity1" labelId="withdraw"/>
-                <labelMapping eventId="Activity2" labelId="lock"/>
+                <labelMapping eventId="lock" labelId="lock"/>
             </labelMappings>
             <expressions>
-                <expression id="Activity0-path-Activity1--exclude" value="not(true)"/>
+                <expression id="Activity0-path-Activity1--include" value="lock != &quot;withdraw&quot;"/>
+                <expression id="Activity0-path-Activity1--exclude" value="not(lock != &quot;withdraw&quot;)"/>
             </expressions>
             <variables/>
             <variableAccesses>
@@ -132,8 +133,8 @@
             <custom>
                 <keywords/>
                 <roles>
-                    <role description="" specification="">external-user</role>
                     <role description="" specification="">caller</role>
+                    <role description="" specification="">external-user</role>
                 </roles>
                 <groups/>
                 <phases/>
@@ -150,7 +151,9 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers/>
+                    <highlightLayers>
+                        <highlightLayer default="true" name="description">DCR Process</highlightLayer>
+                    </highlightLayers>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
@@ -164,7 +167,7 @@
                 <exclude sourceId="Activity1" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
             </excludes>
             <includes>
-                <include sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" link="Activity0--include--Activity1"/>
+                <include sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" expressionId="Activity0-path-Activity1--include" link="Activity0--include--Activity1"/>
             </includes>
             <milestones/>
             <updates/>
@@ -182,7 +185,7 @@
             <included>
                 <event id="Activity0"/>
                 <event id="Activity1"/>
-                <event id="Activity2"/>
+                <event id="lock"/>
             </included>
             <pendingResponses/>
         </marking>
