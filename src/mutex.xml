@@ -1,7 +1,7 @@
-<dcrgraph title="mutex" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+<dcrgraph title="mutex-17-March" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1621371" hash="EB8D8E79E8CA6AB1D32CB0F48EA4EBC7" guid="D23D91BF-E432-4B3F-A3A0-0AE51E7283D5" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
-        <revision id="3134660" type="minor" date="2023-03-14T13:22:49.420"/>
+        <graph id="1622484" hash="F8C24A43F435890E10D4AAAD7C76E9FD" guid="5170CF14-8A54-47A9-83FD-0130C66B3B30" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3139496" type="minor" date="2023-03-17T15:53:13.037"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
@@ -11,11 +11,11 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="200" yLoc="175"/>
+                            <location xLoc="100" yLoc="125"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
-                            <role/>
+                            <role>caller</role>
                         </roles>
                         <readRoles>
                             <readRole/>
@@ -40,11 +40,11 @@
                         <interfaces/>
                     </custom>
                 </event>
-                <event id="lock">
+                <event id="Activity1">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="450" yLoc="175"/>
+                            <location xLoc="400" yLoc="125"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -69,10 +69,7 @@
                         <level>1</level>
                         <sequence>2</sequence>
                         <costs>0</costs>
-                        <eventData>
-                            <dataType sequence="2" width="small" min="NaN" max="NaN" placeholder="" hinttext="">text</dataType>
-                            <validationRules/>
-                        </eventData>
+                        <eventData/>
                         <interfaces/>
                     </custom>
                 </event>
@@ -80,7 +77,7 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="700" yLoc="175"/>
+                            <location xLoc="250" yLoc="275"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -105,7 +102,10 @@
                         <level>1</level>
                         <sequence>3</sequence>
                         <costs>0</costs>
-                        <eventData/>
+                        <eventData>
+                            <dataType sequence="3" width="small" min="NaN" max="NaN" placeholder="" hinttext="">text</dataType>
+                            <validationRules/>
+                        </eventData>
                         <interfaces/>
                     </custom>
                 </event>
@@ -113,20 +113,17 @@
             <subProcesses/>
             <distribution/>
             <labels>
+                <label id="requestWithdraw"/>
                 <label id="withdraw"/>
                 <label id="lock"/>
-                <label id="increase-funds"/>
             </labels>
             <labelMappings>
-                <labelMapping eventId="Activity0" labelId="withdraw"/>
-                <labelMapping eventId="lock" labelId="lock"/>
-                <labelMapping eventId="Activity2" labelId="increase-funds"/>
+                <labelMapping eventId="Activity0" labelId="requestWithdraw"/>
+                <labelMapping eventId="Activity1" labelId="withdraw"/>
+                <labelMapping eventId="Activity2" labelId="lock"/>
             </labelMappings>
             <expressions>
-                <expression id="lock-path-Activity0--include" value="lock=&quot;withdraw&quot;"/>
-                <expression id="lock-path-Activity0--exclude" value="not(lock=&quot;withdraw&quot;)"/>
-                <expression id="lock-path-Activity2--include" value="lock=&quot;increase-funds&quot;"/>
-                <expression id="lock-path-Activity2--exclude" value="not(lock=&quot;increase-funds&quot;)"/>
+                <expression id="Activity0-path-Activity1--exclude" value="not(true)"/>
             </expressions>
             <variables/>
             <variableAccesses>
@@ -134,7 +131,10 @@
             </variableAccesses>
             <custom>
                 <keywords/>
-                <roles/>
+                <roles>
+                    <role description="" specification="">external-user</role>
+                    <role description="" specification="">caller</role>
+                </roles>
                 <groups/>
                 <phases/>
                 <eventTypes/>
@@ -150,9 +150,7 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers>
-                        <highlightLayer default="true" name="description">DCR Process</highlightLayer>
-                    </highlightLayers>
+                    <highlightLayers/>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
@@ -162,17 +160,11 @@
             <responses/>
             <coresponses/>
             <excludes>
-                <exclude sourceId="lock" targetId="lock" filterLevel="1" description="" time="" groups=""/>
-                <exclude sourceId="Activity0" targetId="Activity0" filterLevel="1" description="" time="" groups=""/>
-                <exclude sourceId="Activity2" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
-                <exclude sourceId="lock" targetId="Activity0" filterLevel="1" description="" time="" groups="" expressionId="lock-path-Activity0--exclude" link="lock--include--Activity0"/>
-                <exclude sourceId="lock" targetId="Activity2" filterLevel="1" description="" time="" groups="" expressionId="lock-path-Activity2--exclude" link="lock--include--Activity2"/>
+                <exclude sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" expressionId="Activity0-path-Activity1--exclude" link="Activity0--include--Activity1"/>
+                <exclude sourceId="Activity1" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
             </excludes>
             <includes>
-                <include sourceId="Activity0" targetId="lock" filterLevel="1" description="" time="" groups=""/>
-                <include sourceId="Activity2" targetId="lock" filterLevel="1" description="" time="" groups=""/>
-                <include sourceId="lock" targetId="Activity0" filterLevel="1" description="" time="" groups="" expressionId="lock-path-Activity0--include" link="lock--include--Activity0"/>
-                <include sourceId="lock" targetId="Activity2" filterLevel="1" description="" time="" groups="" expressionId="lock-path-Activity2--include" link="lock--include--Activity2"/>
+                <include sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" link="Activity0--include--Activity1"/>
             </includes>
             <milestones/>
             <updates/>
@@ -188,7 +180,9 @@
             <globalStore/>
             <executed/>
             <included>
-                <event id="lock"/>
+                <event id="Activity0"/>
+                <event id="Activity1"/>
+                <event id="Activity2"/>
             </included>
             <pendingResponses/>
         </marking>
