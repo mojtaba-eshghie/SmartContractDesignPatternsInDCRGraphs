@@ -124,7 +124,7 @@ contract CommitRevealPattern {
 
 ## [Pull over push](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#pull-over-push)
 
-## [Poll](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#poll)
+## [Governance](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#governance)
 
-## [Proxy,Delegate,Relayer](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#proxy-delegate-relayer)
+## [Upgradability](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#upgradability)
 
