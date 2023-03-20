@@ -3,6 +3,7 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 
 ## [Time-constrained](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-constrained)
 ![Time-Constrained Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/time-constrained.svg)
+
 At its simplest form (extracted from [lottery @ Etherscan](https://etherscan.io/address/0x302fE87B56330BE266599FAB2A54747299B5aC5B)):
 ```
 function payoutReady() constant returns (bool) {
