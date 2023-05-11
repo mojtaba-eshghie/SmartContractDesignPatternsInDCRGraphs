@@ -1,4 +1,4 @@
-# Solidity Design Patterns Modeled by DCR Graphs
+## Solidity Design Patterns Modeled by DCR Graphs
 A collection of DCR graphs model of popular design patterns in Solidity smart contracts.
 
 ## [Time-constrained](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-constrained)
