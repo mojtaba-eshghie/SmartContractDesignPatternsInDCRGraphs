@@ -1,5 +1,5 @@
 ## Solidity Design Patterns Modeled by DCR Graphs
-A collection of DCR graphs model of popular design patterns in Solidity smart contracts. Based on the following research work done at KTH, Chalmers, University of Copenhagen:
+A collection of DCR graphs model of popular design patterns in Solidity smart contracts. Based on the following research work:
 
 [Capturing Smart Contract Design with DCR Graphs](https://arxiv.org/abs/2305.04581)
 
