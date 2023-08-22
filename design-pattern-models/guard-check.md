@@ -1,6 +1,6 @@
 # Guard Check Design Pattern Model in DCR Graph
 
-[Guard Check](/svg/guard-check.svg)
+![Guard Check](/svg/guard-check.svg)
 
 [Download Guard Check source](src/guard-check.xml)
 
