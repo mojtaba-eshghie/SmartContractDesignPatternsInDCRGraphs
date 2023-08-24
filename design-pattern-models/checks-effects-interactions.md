@@ -42,8 +42,8 @@ In the above contract:
 
 ## DCR Model
 
-![Guard Check](/svg/checks-effects-interactions.svg)
+![Checks, Effects, Interactions](/svg/checks-effects-interactions.svg)
 
-[Download Guard Check source](/src/checks-effects-interactions.xml)
+[Download Checks, Effects, Interactions source](/src/checks-effects-interactions.xml)
 
 [Link to the public DCR graph in DCRGraphs.net](https://dcrgraphs.net/tool/main/Graph?id=ec253dfe-6989-42f9-b0d3-252ca8554b97)
