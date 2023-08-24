@@ -1,0 +1,193 @@
+<dcrgraph title="secure-ether-transfer" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+    <meta>
+        <graph id="1699302" hash="844B5CDDBF2E6B8EAF632F2E810DC9AB" guid="35FA88CB-1BFB-4AAD-97BD-E2AE9C8BE5FB" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3291406" type="minor" date="2023-08-24T22:30:12.030"/>
+        <organization id="1" name="Community"/>
+    </meta>
+    <specification>
+        <resources>
+            <events>
+                <event id="Activity1">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="550" yLoc="125"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>2</sequence>
+                        <costs>0</costs>
+                        <eventData/>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="result">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="300" yLoc="125"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>3</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="3" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="balance">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="50" yLoc="125"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>5</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="5" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
+            </events>
+            <subProcesses/>
+            <distribution/>
+            <labels>
+                <label id="withdrawAll"/>
+                <label id="send"/>
+                <label id="balance"/>
+            </labels>
+            <labelMappings>
+                <labelMapping eventId="Activity1" labelId="withdrawAll"/>
+                <labelMapping eventId="result" labelId="send"/>
+                <labelMapping eventId="balance" labelId="balance"/>
+            </labelMappings>
+            <expressions>
+                <expression id="result-path-balance--update" value="result != -1"/>
+                <expression id="result-path-balance--update--value" value="0"/>
+                <expression id="Activity1-path-result--include" value="balance &gt; 0"/>
+                <expression id="Activity1-path-result--exclude" value="not(balance &gt; 0)"/>
+            </expressions>
+            <variables/>
+            <variableAccesses>
+                <writeAccesses/>
+            </variableAccesses>
+            <custom>
+                <keywords/>
+                <roles/>
+                <groups/>
+                <phases/>
+                <eventTypes/>
+                <eventParameters/>
+                <graphDetails>DCR Process</graphDetails>
+                <graphDocumentation/>
+                <graphLanguage>en-US</graphLanguage>
+                <graphDomain>process</graphDomain>
+                <graphFilters>
+                    <filteredGroups/>
+                    <filteredRoles/>
+                    <filteredPhases/>
+                </graphFilters>
+                <hightlighterMarkup id="HLM"/>
+                <highlighterMarkup>
+                    <highlightLayers/>
+                    <highlights/>
+                </highlighterMarkup>
+            </custom>
+        </resources>
+        <constraints>
+            <conditions/>
+            <responses/>
+            <coresponses/>
+            <excludes>
+                <exclude sourceId="Activity1" targetId="result" filterLevel="1" description="" time="" groups="" expressionId="Activity1-path-result--exclude" link="Activity1--include--result"/>
+            </excludes>
+            <includes>
+                <include sourceId="Activity1" targetId="result" filterLevel="1" description="" time="" groups="" expressionId="Activity1-path-result--include" link="Activity1--include--result"/>
+            </includes>
+            <milestones/>
+            <updates>
+                <update sourceId="result" targetId="balance" filterLevel="1" description="" time="" groups="" expressionId="result-path-balance--update" valueExpressionId="result-path-balance--update--value"/>
+            </updates>
+            <spawns/>
+            <templateSpawns/>
+        </constraints>
+    </specification>
+    <runtime>
+        <custom>
+            <globalMarking/>
+        </custom>
+        <marking>
+            <globalStore/>
+            <executed/>
+            <included>
+                <event id="Activity1"/>
+                <event id="balance"/>
+            </included>
+            <pendingResponses/>
+        </marking>
+    </runtime>
+</dcrgraph>
