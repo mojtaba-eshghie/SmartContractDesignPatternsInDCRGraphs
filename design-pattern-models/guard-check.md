@@ -1,10 +1,16 @@
 # Guard Check Design Pattern Model in DCR Graph
 
-![Guard Check](/svg/guard-check.svg)
+## Design Pattern Description
 
-[Download Guard Check source](src/guard-check.xml)
+A guard check validates user inputs and performs checks
+on bookkeeping variables and invariants before the execution of the function
+body (mainly as a require statement). This pattern is often applied using
+function modifiers in Solidity and represented using guard conditions on DCR
+relations.
 
-The activity names and the specific guard condition in the above DCR model is extracted from the following example Solidity contract:
+## Example Usage
+
+The activity names and the specific guard condition in the DCR model of this pattern is extracted from the following example Solidity contract:
 
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
@@ -56,3 +62,9 @@ In the above contract:
 - The onlyOwner modifier acts as a guard to ensure that only the owner of the contract can call certain functions.
 - The deposit function has a guard check to ensure that the deposited amount is greater than 0.
 - The withdraw function has a guard check to ensure that there are sufficient funds in the contract before allowing a withdrawal.
+
+## DCR Model
+
+![Guard Check](/svg/guard-check.svg)
+
+[Download Guard Check source](/src/guard-check.xml)
