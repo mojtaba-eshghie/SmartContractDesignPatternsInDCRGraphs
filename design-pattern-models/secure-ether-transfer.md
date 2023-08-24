@@ -55,6 +55,8 @@ The activities and relations DCR model of this pattern is reflecting the followi
 4. **withdrawAll()**: This function allows the owner to withdraw all Ether from the contract if the balance is greater than 0. After a successful withdrawal, the result is set to 0.
 5. **checkResult()**: This function checks the result of the withdrawal. If the result is not -1 (indicating a withdrawal attempt), it sets the balance to 0.
 
+_The most nateworthy aspect of the upcoming model is that DCR graphs does not have an explicit notion of post-condition checking. Therefore, we have to use the guarded relations to the next logical step to represent the post-condition (in this case guard on the **add value** relation)_
+
 ## DCR Model
 
 ![Secure Ether Transfer](/svg/secure-ether-transfer.svg)
