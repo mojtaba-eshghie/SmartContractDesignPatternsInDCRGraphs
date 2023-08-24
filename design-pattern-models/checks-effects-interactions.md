@@ -2,7 +2,7 @@
 
 ## Design Pattern Description
 
-This pattern is concerned with theorder of certain activities, especially when interactions with other contracts(external calls) happen [20, 38]. External calls can be risky, in particular as calltargets cannot necessarily be trusted. One risk is that the called contract callsback into the calling contract, before returning, purposefully abusing the callingcontract’s logic. To prevent such exploits, the caller first performs checks on its bookkeeping variables (variables keeping the balance of tokens, assets,etc.). Then, it modifies these bookkeeping variables based on the business logic(effects). Lastly, there will be interactions with (i. e., calls to) other contracts. InDCR graphs, we can specify this strict ordering via inclusion/exclusion relationsamong the respective activities. This design pattern has been introduced to prevent reentrancy attacks and other potential vulnerabilities.
+This pattern is concerned with theorder of certain activities, especially when interactions with other contracts(external calls) happen. External calls can be risky, in particular as call targets cannot necessarily be trusted. One risk is that the called contract callsback into the calling contract, before returning, purposefully abusing the callingcontract’s logic. To prevent such exploits, the caller first performs checks on its bookkeeping variables (variables keeping the balance of tokens, assets,etc.). Then, it modifies these bookkeeping variables based on the business logic(effects). Lastly, there will be interactions with (i. e., calls to) other contracts. In DCR graphs, we can specify this strict ordering via inclusion/exclusion relationsamong the respective activities. This design pattern has been introduced to prevent reentrancy attacks and other potential vulnerabilities.
 
 ## Example Usage
 
@@ -42,6 +42,8 @@ In the above contract:
 
 ## DCR Model
 
-![Guard Check](/svg/guard-check.svg)
+![Guard Check](/svg/checks-effects-interactions.svg)
 
-[Download Guard Check source](/src/guard-check.xml)
+[Download Guard Check source](/src/checks-effects-interactions.xml)
+
+[Link to the public DCR graph in DCRGraphs.net](https://dcrgraphs.net/tool/main/Graph?id=ec253dfe-6989-42f9-b0d3-252ca8554b97)
