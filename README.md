@@ -135,12 +135,6 @@ contract CommitRevealPattern {
 
 ## [Checks, Effects, Interactions](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#checks-effects-interactions)
 
-## [Mutex](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#mutex)
-
-![Mutex Design Pattern DCR Graph Model for Ethereum Smart Contracts](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/mutex.svg)
-
-[Download mutex pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/mutex.xml)
-
 ## [Guard Check](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#guard-check)
 
 ## [Abstract Contract States](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#fsa)
