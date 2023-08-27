@@ -2,6 +2,8 @@
 
 ## Governance Pattern Description
 
+On-chain governance is a crucial component of decentralized protocols, allowing for decision-making on parameter changes, upgrades, and management. The governance pattern is typically used to allow token holders or a group of privileged users to vote on proposals and make decisions that affect the contract's behavior. A popular example of on-chain governance is the Compound protocol. This design pattern is the result of multiple design patterns from different domains, namely, role-based access control, timed temporal constraint, token, as well as upgrade patterns.
+
 ## Example Usage
 
 The activities and relations DCR model of this pattern is reflecting the following Solidity contract:
