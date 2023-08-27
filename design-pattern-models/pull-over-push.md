@@ -70,6 +70,6 @@ For demonstration, the example contains a function for both the pattern and anti
 
 ![Anti-pattern for pull over push](/svg/pull-over-push-anti-pattern.svg)
 
-[Download Oracle source](/src/pull-over-push.xml)
+[Download pull over push source](/src/pull-over-push.xml)
 
 [Link to the public DCR graph in DCRGraphs.net](https://dcrgraphs.net/tool/main/Graph?id=41157b2a-d8ce-4832-8994-c54839987b91)

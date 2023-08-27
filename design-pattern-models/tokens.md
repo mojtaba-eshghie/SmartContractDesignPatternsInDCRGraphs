@@ -75,8 +75,8 @@ There are only three state-changing public functions in ERC-20 token standard: `
 
 ## DCR Model
 
-![Oracle](/svg/ERC-20.svg)
+![Tokens (ERC-20)](/svg/ERC-20.svg)
 
-[Download Oracle source](/src/ERC-20.xml)
+[Download tokens (ERC-20) source](/src/ERC-20.xml)
 
 [Link to the public DCR graph in DCRGraphs.net](https://dcrgraphs.net/tool/main/Graph?id=e53d53e3-24ad-4fc9-90bf-b127a4b7d7f6)

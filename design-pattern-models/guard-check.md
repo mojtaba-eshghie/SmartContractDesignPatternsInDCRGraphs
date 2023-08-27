@@ -68,3 +68,5 @@ In the above contract:
 ![Guard Check](/svg/guard-check.svg)
 
 [Download Guard Check source](/src/guard-check.xml)
+
+[Link to the public DCR graph in DCRGraphs.net](https://dcrgraphs.net/tool/main/Graph?id=f3544df8-edac-433f-9047-245b7b717888)
