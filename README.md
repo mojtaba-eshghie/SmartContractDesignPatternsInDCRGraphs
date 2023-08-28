@@ -1,13 +1,15 @@
 ## Solidity Design Patterns Modeled by DCR Graphs
 
+A comprehensive collection of business process-level design patterns of smart contracts modeled in DCR graphs semantics.
+
 A collection of DCR graphs model of popular design patterns in Solidity smart contracts.
 
-| Design Pattern                                                                         | Public Model Link                                                                     |
-| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Time-Constraint](/design-pattern-models/time-constraint.md)                           | [Link](https://dcrgraphs.net/tool/main/Graph?id=db8ca57a-5808-46a8-9c8d-b74c640a0d81) |
-| [Time Incentivizing](/design-pattern-models/time-incentivizing.md)                     | [Link](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) |
-| [Automatic Deprecation](/design-pattern-models/automatic-deprecation.md)               | Data 3C                                                                               |
-| [Rate Limiting](/design-pattern-models/rate-limiting.md)                               | Data 3C                                                                               |
+| Design Pattern                                                                         | View The Model Publicly                                                               | Run Model Simulation                                                       |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [Time-Constraint](/design-pattern-models/time-constraint.md)                           | [View](https://dcrgraphs.net/tool/main/Graph?id=db8ca57a-5808-46a8-9c8d-b74c640a0d81) |
+| [Time Incentivizing](/design-pattern-models/time-incentivizing.md)                     | [View](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) |
+| [Automatic Deprecation](/design-pattern-models/automatic-deprecation.md)               | [View](https://dcrgraphs.net/tool/main/Graph?id=2f318f9f-8696-4237-89bd-177692439328) |
+| [Rate Limiting](/design-pattern-models/rate-limiting.md)                               | [View](https://dcrgraphs.net/tool/main/Graph?id=00307896-5158-418e-bd05-20b90c57f05c) | [Run](https://sim.dcrgraphs.net?code=00307896-5158-418e-bd05-20b90c57f05c) |
 | [Speed Bump (timed temporal-constrained)](/design-pattern-models/speed-bump.md)        | Data 3C                                                                               |
 | [Safe Self-Destruction](/design-pattern-models/safe-self-destruction.md)               | Data 3C                                                                               |
 | [Access Control](/design-pattern-models/access-control.md)                             | Data 3C                                                                               |

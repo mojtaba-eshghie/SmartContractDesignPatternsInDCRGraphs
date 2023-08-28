@@ -1,21 +1,57 @@
-<dcrgraph title="time-incentivizing" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+<dcrgraph title="automatic-deprecation" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1621660" hash="65F08B0B720E593D789C8165A503B2E1" guid="E7EE7BD3-99A3-40A7-BBB7-09E00DA6E2C4" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
-        <revision id="3293176" type="minor" date="2023-08-28T05:41:14.963"/>
+        <graph id="1699540" hash="D4432D7231B9B9FDFF016857A7BBFA72" guid="2F318F9F-8696-4237-89BD-177692439328" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3294016" type="minor" date="2023-08-28T13:39:35.187"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
         <resources>
             <events>
+                <event id="deprecationTime">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="50" yLoc="225"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role>owner</role>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>1</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="1" width="small" min="" max="" placeholder="" hinttext="">duration</dataType>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
                 <event id="Activity1">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="300" yLoc="125"/>
+                            <location xLoc="400" yLoc="225"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
-                            <role>client</role>
+                            <role>blockchain</role>
                         </roles>
                         <readRoles>
                             <readRole/>
@@ -44,11 +80,11 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="500" yLoc="275"/>
+                            <location xLoc="250" yLoc="75"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
-                            <role>bank</role>
+                            <role/>
                         </roles>
                         <readRoles>
                             <readRole/>
@@ -73,51 +109,18 @@
                         <interfaces/>
                     </custom>
                 </event>
-                <event id="Activity2_1">
-                    <precondition message=""/>
-                    <custom>
-                        <visualization>
-                            <location xLoc="100" yLoc="275"/>
-                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
-                        </visualization>
-                        <roles>
-                            <role>bank</role>
-                        </roles>
-                        <readRoles>
-                            <readRole/>
-                        </readRoles>
-                        <groups>
-                            <group/>
-                        </groups>
-                        <phases>
-                            <phase/>
-                        </phases>
-                        <eventType/>
-                        <eventScope>private</eventScope>
-                        <eventTypeData/>
-                        <eventDescription/>
-                        <purpose/>
-                        <guide/>
-                        <insight use="false"/>
-                        <level>1</level>
-                        <sequence>4</sequence>
-                        <costs>0</costs>
-                        <eventData/>
-                        <interfaces/>
-                    </custom>
-                </event>
             </events>
             <subProcesses/>
             <distribution/>
             <labels>
-                <label id="pay loan"/>
-                <label id="fine"/>
-                <label id="give loan"/>
+                <label id="setDeprecationTime"/>
+                <label id="auxiliary_deprecate"/>
+                <label id="perform"/>
             </labels>
             <labelMappings>
-                <labelMapping eventId="Activity1" labelId="pay loan"/>
-                <labelMapping eventId="Activity2" labelId="fine"/>
-                <labelMapping eventId="Activity2_1" labelId="give loan"/>
+                <labelMapping eventId="deprecationTime" labelId="setDeprecationTime"/>
+                <labelMapping eventId="Activity1" labelId="auxiliary_deprecate"/>
+                <labelMapping eventId="Activity2" labelId="perform"/>
             </labelMappings>
             <expressions/>
             <variables/>
@@ -127,8 +130,8 @@
             <custom>
                 <keywords/>
                 <roles>
-                    <role description="" specification="">bank</role>
-                    <role description="" specification="">client</role>
+                    <role description="" specification="">blockchain</role>
+                    <role description="" specification="">owner</role>
                 </roles>
                 <groups/>
                 <phases/>
@@ -145,29 +148,28 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers>
-                        <highlightLayer default="true" name="description">DCR Process</highlightLayer>
-                    </highlightLayers>
+                    <highlightLayers/>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
         </resources>
         <constraints>
             <conditions>
-                <condition sourceId="Activity2_1" targetId="Activity2" filterLevel="1" description="" time="P1M" groups="" link="Activity2_1--condition--Activity2"/>
+                <condition sourceId="deprecationTime" targetId="Activity1" filterLevel="1" description="" time="deprecationTime" groups="" link="deprecationTime--condition--Activity1"/>
             </conditions>
-            <responses/>
+            <responses>
+                <response sourceId="deprecationTime" targetId="Activity1" filterLevel="1" description="" time="deprecationTime" groups=""/>
+            </responses>
             <coresponses/>
             <excludes>
                 <exclude sourceId="Activity1" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
-                <exclude sourceId="Activity2" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
             </excludes>
             <includes>
-                <include sourceId="Activity2_1" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
-                <include sourceId="Activity2_1" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
+                <include sourceId="deprecationTime" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
+                <include sourceId="deprecationTime" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
             </includes>
             <milestones>
-                <milestone sourceId="Activity2_1" targetId="Activity2" filterLevel="1" description="" time="P1M" groups="" link="Activity2_1--condition--Activity2"/>
+                <milestone sourceId="deprecationTime" targetId="Activity1" filterLevel="1" description="" time="deprecationTime" groups="" link="deprecationTime--condition--Activity1"/>
             </milestones>
             <updates/>
             <spawns/>
@@ -182,7 +184,7 @@
             <globalStore/>
             <executed/>
             <included>
-                <event id="Activity2_1"/>
+                <event id="deprecationTime"/>
             </included>
             <pendingResponses/>
         </marking>

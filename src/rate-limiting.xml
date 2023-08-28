@@ -1,17 +1,17 @@
-<dcrgraph title="rate-limiting-3rd-attempt-9th-March-2023" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="4" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+<dcrgraph title="rate-limiting" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1621630" hash="60B2B25A6C37A8D1472EDA7DCB19AA74" guid="A18F852E-927D-4D13-BE3A-CF77D2B2D08B" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
-        <revision id="3127365" type="minor" date="2023-03-09T14:56:24.637"/>
+        <graph id="1624607" hash="6665A03508A4B506D57A4DE4DF66D8B6" guid="00307896-5158-418E-BD05-20B90C57F05C" OwnerName="Thomas Hildebrandt" OwnerId="248" categoryId="343" categoryTitle="Default" Keywords=""/>
+        <revision id="3218608" type="minor" date="2023-06-03T18:13:19.680"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
         <resources>
             <events>
-                <event id="withdraw" type="subprocess">
+                <event id="currentamount" computation="currentamount-computation" type="subprocess">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="525" yLoc="125"/>
+                            <location xLoc="150" yLoc="25"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -34,20 +34,20 @@
                         <guide/>
                         <insight use="false"/>
                         <level>1</level>
-                        <sequence>2</sequence>
+                        <sequence>1</sequence>
                         <costs>0</costs>
                         <eventData/>
                         <interfaces/>
                     </custom>
-                    <event id="currentPeriodAmount" computation="currentPeriodAmount-computation">
+                    <event id="withdraw">
                         <precondition message=""/>
                         <custom>
                             <visualization>
-                                <location xLoc="550" yLoc="175"/>
+                                <location xLoc="175" yLoc="75"/>
                                 <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                             </visualization>
                             <roles>
-                                <role/>
+                                <role>user</role>
                             </roles>
                             <readRoles>
                                 <readRole/>
@@ -66,22 +66,22 @@
                             <guide/>
                             <insight use="false"/>
                             <level>1</level>
-                            <sequence>4</sequence>
+                            <sequence>2</sequence>
                             <costs>0</costs>
                             <eventData/>
                             <interfaces/>
                         </custom>
                     </event>
                 </event>
-                <event id="currentPeriodEnd" computation="currentPeriodEnd-computation">
+                <event id="newperiod">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="850" yLoc="175"/>
+                            <location xLoc="450" yLoc="75"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
-                            <role/>
+                            <role>system</role>
                         </roles>
                         <readRoles>
                             <readRole/>
@@ -100,14 +100,43 @@
                         <guide/>
                         <insight use="false"/>
                         <level>1</level>
-                        <sequence>5</sequence>
+                        <sequence>3</sequence>
+                        <costs>0</costs>
+                        <eventData/>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="limit">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="600" yLoc="75"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role>user</role>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>4</sequence>
                         <costs>0</costs>
                         <eventData>
-                            <dataType sequence="5" width="small" placeholder="" hinttext="" dataSetList="" dataSetActivity="" multiple="false" format="int">choice</dataType>
-                            <dictionary>
-                                <item label="Item 1" value="1"/>
-                                <item label="Item 2" value="2"/>
-                            </dictionary>
+                            <dataType sequence="4" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
                             <validationRules/>
                         </eventData>
                         <interfaces/>
@@ -117,22 +146,21 @@
             <subProcesses/>
             <distribution/>
             <labels>
+                <label id="rate limiter"/>
                 <label id="withdraw"/>
-                <label id="currentPeriodAmount"/>
-                <label id="currentPeriodEnd"/>
+                <label id="new period"/>
+                <label id="Set limit"/>
             </labels>
             <labelMappings>
+                <labelMapping eventId="currentamount" labelId="rate limiter"/>
                 <labelMapping eventId="withdraw" labelId="withdraw"/>
-                <labelMapping eventId="currentPeriodAmount" labelId="currentPeriodAmount"/>
-                <labelMapping eventId="currentPeriodEnd" labelId="currentPeriodEnd"/>
+                <labelMapping eventId="newperiod" labelId="new period"/>
+                <labelMapping eventId="limit" labelId="Set limit"/>
             </labelMappings>
             <expressions>
-                <expression id="withdraw-path-currentPeriodAmount--include" value="currentPeriodAmount + 1 &lt; 4"/>
-                <expression id="withdraw-path-currentPeriodAmount--exclude" value="not(currentPeriodAmount + 1 &lt; 4)"/>
-                <expression id="withdraw-path-currentPeriodEnd--include" value="currentPeriodEnd  &lt; now"/>
-                <expression id="withdraw-path-currentPeriodEnd--exclude" value="not(currentPeriodEnd  &lt; now)"/>
-                <expression id="currentPeriodAmount-computation" value="currentPeriodAmount + 1"/>
-                <expression id="currentPeriodEnd-computation" value="now + P1D"/>
+                <expression id="newperiod-path-withdraw--milestone" value="currentamount &gt;= limit"/>
+                <expression id="newperiod-path-currentamount--update--value" value="0"/>
+                <expression id="currentamount-computation" value="currentamount+1"/>
             </expressions>
             <variables/>
             <variableAccesses>
@@ -140,12 +168,15 @@
             </variableAccesses>
             <custom>
                 <keywords/>
-                <roles/>
+                <roles>
+                    <role description="" specification="">system</role>
+                    <role description="" specification="">user</role>
+                </roles>
                 <groups/>
                 <phases/>
                 <eventTypes/>
                 <eventParameters/>
-                <graphDetails>DCR Process</graphDetails>
+                <graphDetails>DCR Process describing the rate-limiting pattern</graphDetails>
                 <graphDocumentation/>
                 <graphLanguage>en-US</graphLanguage>
                 <graphDomain>process</graphDomain>
@@ -156,31 +187,30 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers/>
+                    <highlightLayers>
+                        <highlightLayer default="true" name="description">DCR Process describing the rate-limiting pattern</highlightLayer>
+                    </highlightLayers>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
         </resources>
         <constraints>
-            <conditions/>
+            <conditions>
+                <condition sourceId="newperiod" targetId="newperiod" filterLevel="1" description="" time="P1D" groups=""/>
+                <condition sourceId="limit" targetId="newperiod" filterLevel="1" description="" time="" groups=""/>
+            </conditions>
             <responses>
-                <response sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups=""/>
-                <response sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups=""/>
+                <response sourceId="newperiod" targetId="newperiod" filterLevel="1" description="" time="P1D" groups=""/>
             </responses>
             <coresponses/>
-            <excludes>
-                <exclude sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodAmount--exclude" link="withdraw--include--withdraw.currentPeriodAmount"/>
-                <exclude sourceId="currentPeriodAmount" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups=""/>
-                <exclude sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodEnd--exclude" link="withdraw--include--currentPeriodEnd"/>
-                <exclude sourceId="currentPeriodEnd" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups=""/>
-            </excludes>
-            <includes>
-                <include sourceId="withdraw" targetId="currentPeriodAmount" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodAmount--include" link="withdraw--include--withdraw.currentPeriodAmount"/>
-                <include sourceId="withdraw" targetId="currentPeriodEnd" filterLevel="1" description="" time="" groups="" expressionId="withdraw-path-currentPeriodEnd--include" link="withdraw--include--currentPeriodEnd"/>
-                <include sourceId="currentPeriodEnd" targetId="withdraw" filterLevel="1" description="" time="" groups=""/>
-            </includes>
-            <milestones/>
-            <updates/>
+            <excludes/>
+            <includes/>
+            <milestones>
+                <milestone sourceId="newperiod" targetId="withdraw" filterLevel="1" description="" time="" groups="" expressionId="newperiod-path-withdraw--milestone"/>
+            </milestones>
+            <updates>
+                <update sourceId="newperiod" targetId="currentamount" filterLevel="1" description="" time="" groups="" valueExpressionId="newperiod-path-currentamount--update--value"/>
+            </updates>
             <spawns/>
             <templateSpawns/>
         </constraints>
@@ -191,11 +221,18 @@
         </custom>
         <marking>
             <globalStore/>
-            <executed/>
+            <executed>
+                <event id="newperiod" time="P-1D"/>
+            </executed>
             <included>
-                <event id="currentPeriodEnd"/>
+                <event id="currentamount"/>
+                <event id="withdraw"/>
+                <event id="newperiod"/>
+                <event id="limit"/>
             </included>
-            <pendingResponses/>
+            <pendingResponses>
+                <event id="newperiod"/>
+            </pendingResponses>
         </marking>
     </runtime>
 </dcrgraph>

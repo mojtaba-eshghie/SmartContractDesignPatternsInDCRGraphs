@@ -1,1 +1,0 @@
-As discussed in [@dcrsub].
