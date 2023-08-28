@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@citation-js/plugin-bibtex": "^0.6.8",
-    "citation-js": "^0.6.8"
+    "@octokit/rest": "^20.0.1",
+    "citation-js": "^0.6.8",
+    "dotenv": "^16.3.1"
   }
 }

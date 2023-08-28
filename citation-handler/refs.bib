@@ -1,0 +1,934 @@
+@InProceedings{dcrsub,
+author="Normann, H{\aa}kon
+and Debois, S{\o}ren
+and Slaats, Tijs
+and Hildebrandt, Thomas T.",
+title="Zoom and Enhance: Action Refinement via Subprocesses in Timed Declarative Processes",
+booktitle="BPM 2021",
+year="2021",
+publisher="Springer",
+address="Cham",
+pages="161--178",
+abstract="This paper addresses the open technical problems of evolving executable, event-based process models by refinement, that is, by iteratively expanding a model until it has the required level of detail. Such iterative development is helpful because of the expectation that the next-step model is semantically compatible with the previous one, only with more detail. We provide in this paper a formal notion of refinement of single atomic actions (events) into entire subprocesses, and a theoretical framework for providing guarantees that such a next-step model is formally a refinement of the previous one. Our work is set within the declarative, event-based process modelling language of timed Dynamic Condition Response (DCR) graphs, which can express timed constraints (conditions with delay and obligations with deadlines) between events, liveness, safety, and concurrency. Concretely, we extend DCR graph syntax and semantics with a notion of subprocess, provide examples of its use, and give sound approximations of situations where replacing an event with a subprocess formally is a refinement of the original process.",
+isbn="978-3-030-85469-0"
+}
+
+
+@InProceedings{dcrdata,
+author="Hildebrandt, Thomas T.
+and Normann, H{\aa}kon
+and Marquard, Morten
+and Debois, S{\o}ren
+and Slaats, Tijs",
+title="Decision Modelling in Timed Dynamic Condition Response Graphs with Data",
+booktitle="Business Process Management Workshops",
+year="2022",
+publisher="Springer",
+address="Cham",
+pages="362--374",
+abstract="We provide a formal semantics for timed DCR graphs with decision events and data, and show how the model supports merging declarative decision modelling and process modelling in one notation. We exemplify the model by an expense report process and discuss how decisions may be presented using DMN jointly with the DCR process notation. If data domains are bounded, models are finite state and allow formal verification of both safety and liveness properties. The formal model is fully implemented in commercial process design and workflow management systems provided by DCR Solutions and also freely available for academic use.",
+isbn="978-3-030-94343-1"
+}
+
+@article{wood2014ethereum,
+  title={{E}thereum: {A} secure decentralised generalised transaction ledger},
+  author={Wood, Gavin},
+  journal={Ethereum Project Yellow Paper},
+  volume={151},
+  pages={1--32},
+  year={2014}
+}
+
+@incollection{sandhu1998role,
+  title={Role-based access control},
+  author={Sandhu, Ravi S},
+  booktitle={Advances in Computers},
+  volume={46},
+  pages={237--286},
+  year={1998},
+  publisher={Elsevier}
+}
+
+@inproceedings{liu-2022,
+author = {Liu, Ye and Li, Yi and Lin, Shang-Wei and Artho, Cyrille},
+title = {Finding Permission Bugs in Smart Contracts with Role Mining},
+year = {2022},
+isbn = {9781450393799},
+publisher = {ACM},
+OPTaddress = {New York, NY, USA},
+OPTurl = {https://doi.org/10.1145/3533767.3534372},
+OPTdoi = {10.1145/3533767.3534372},
+abstract = {Smart contracts deployed on permissionless blockchains, such as Ethereum, are accessible to any user in a trustless environment. Therefore, most smart contract applications implement access control policies to protect their valuable assets from unauthorized accesses. A difficulty in validating the conformance to such policies, i.e., whether the contract implementation adheres to the expected behaviors, is the lack of policy specifications. In this paper, we mine past transactions of a contract to recover a likely access control model, which can then be checked against various information flow policies and identify potential bugs related to user permissions. We implement our role mining and security policy validation in tool SPCon. The experimental evaluation on labeled smart contract role mining benchmark demonstrates that SPCon effectively mines more accurate user roles compared to the state-of-the-art role mining tools. Moreover, the experimental evaluation on real-world smart contract benchmark and access control CVEs indicates SPCon effectively detects potential permission bugs while having better scalability and lower false-positive rate compared to the state-of-the-art security tools, finding 11 previously unknown bugs and detecting six CVEs that no other tool can find.},
+OPTbooktitle = {Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis},
+booktitle = {SIGSOFT ISSTA 2022},
+pages = {716–727},
+OPTnumpages = {12},
+OPTkeywords = {Smart contract, role mining, information flow policy, access control},
+OPTlocation = {Virtual, South Korea},
+OPTseries = {ISSTA 2022}
+}
+
+@ARTICLE {wang-2022,
+author = {H. Wang and Y. Liu and Y. Li and S. Lin and C. Artho and L. Ma and Y. Liu},
+journal = {IEEE Transactions on Dependable and Secure Computing},
+title = {Oracle-Supported Dynamic Exploit Generation for Smart Contracts},
+year = {2022},
+volume = {19},
+number = {03},
+OPTissn = {1941-0018},
+pages = {1795-1809},
+OPTabstract = {Despite the high stakes involved in smart contracts, they are often developed in an undisciplined manner, leaving the security and reliability of blockchain transactions at risk. In this article, we introduce ContraMaster&amp;#x2014;an oracle-supported dynamic exploit generation framework for smart contracts. Existing approaches mutate only single transactions; ContraMaster exceeds these by mutating the transaction sequences. ContraMaster uses data-flow, control-flow, and the dynamic contract state to guide its mutations. It then monitors the executions of target contract programs, and validates the results against a general-purpose semantic test oracle to discover vulnerabilities. Being a dynamic technique, it guarantees that each discovered vulnerability is a violation of the test oracle and is able to generate the attack script to exploit this vulnerability. In contrast to rule-based approaches, ContraMaster has not shown any false positives, and it easily generalizes to unknown types of vulnerabilities (e.g., logic errors). We evaluate ContraMaster on 218 vulnerable smart contracts. The experimental results confirm its practical applicability and advantages over the state-of-the-art techniques, and also reveal three new types of attacks.},
+keywords = {smart contracts;blockchain;semantics;cryptography;fuzzing;computer science;solid modeling},
+OPTdoi = {10.1109/TDSC.2020.3037332},
+publisher = {IEEE Computer Society},
+OPTaddress = {Los Alamitos, CA, USA},
+OPTmonth = {may}
+}
+
+@article{guth2018specification,
+  title={Specification mining for smart contracts with automatic abstraction tuning},
+  author={Guth, Florentin and W{\"u}stholz, Valentin and Christakis, Maria and M{\"u}ller, Peter},
+  journal={arXiv:1807.07822},
+  year={2018}
+}
+
+@article{chen2020understanding,
+  title={Understanding {Ethereum} via graph analysis},
+  author={Chen, Ting and Li, Zihao and Zhu, Yuxiao and Chen, Jiachi and Luo, Xiapu and Lui, John Chi-Shing and Lin, Xiaodong and Zhang, Xiaosong},
+  OPTjournal={ACM Transactions on Internet Technology (TOIT)},
+journal={ACM TOIT},
+volume={20},
+  number={2},
+  pages={1--32},
+  year={2020},
+  publisher={ACM}
+}
+
+
+@misc{Chainbridgesolidity2022a,
+author = {ChainSafe},
+title = {chainbridge-solidity},
+year = {2022},
+note = {original-date: 2020-03-25T14:35:06Z},
+abstract = {Solidity contracts for Sygma},
+publisher = {GitHub},
+url = {https://github.com/ChainSafe/chainbridge-solidity}
+}
+%url = {https://github.com/ChainSafe/chainbridge-solidity/blob/2f29dd714a09f075bf6454518a1e57a6e5d55018/contracts/Bridge.sol},
+
+@misc{solidity-web,
+title = {Solidity documentation},
+year = {2023},
+url = {https://docs.soliditylang.org/en/latest/},
+}
+
+
+@inproceedings{SALTnotACID,
+	address = {Setubal, PRT},
+	series = {{CLOSER} 2017},
+	title = {Not {ACID}, not {BASE}, but {SALT}},
+	isbn = {978-989-758-243-1},
+	url = {https://doi.org/10.5220/0006408207550764},
+	doi = {10.5220/0006408207550764},
+	abstract = {Traditional ACID transactions, typically supported by relational database management systems, emphasize database consistency. BASE provides a model that trades some consistency for availability, and is typically favored by cloud systems and NoSQL data stores. With the increasing popularity of blockchain technology, another alternative to both ACID and BASE is introduced: SALT. In this keynote paper, we present SALT as a model to explain blockchains and their use in application architecture. We take both, a transaction and a transaction processing systems perspective on the SALT model. From a transactions perspective, SALT is about Sequential, Agreed-on, Ledgered, and Tamper-resistant transaction processing. From a systems perspective, SALT is about decentralized transaction processing systems being Symmetric, Admin-free, Ledgered and Time-consensual. We discuss the importance of these dual perspectives, both, when comparing SALT with ACID and BASE, and when engineering blockchain-based applications. We expect the next-generation of decentralized transactional applications to leverage combinations of all three transaction models.},
+	urldate = {2022-12-07},
+	booktitle = {Proceedings of the 7th {International} {Conference} on {Cloud} {Computing} and {Services} {Science}},
+	publisher = {SCITEPRESS - Science and Technology Publications, Lda},
+	author = {Tai, Stefan and Eberhardt, Jacob and Klems, Markus},
+	month = apr,
+	year = {2017},
+	keywords = {ACID, BASE, Blockchain, Decentralized, SALT, Transaction Processing.},
+	pages = {755--764},
+	file = {Submitted Version:/Users/mojtabaeshghie/Zotero/storage/N3P36Q2R/Tai et al. - 2017 - Not ACID, not BASE, but SALT.pdf:application/pdf},
+}
+
+
+
+
+@inproceedings{exploitLawsOfOrder,
+	OPTaddress = {New York, NY, USA},
+	OPTseries = {{ISSTA} 2019},
+	title = {Exploiting the laws of order in smart contracts},
+	isbn = {978-1-4503-6224-5},
+	OPTurl = {https://doi.org/10.1145/3293882.3330560},
+	OPTdoi = {10.1145/3293882.3330560},
+	abstract = {We investigate a family of bugs in blockchain-based smart contracts, which we dub event-ordering (or EO) bugs. These bugs are intimately related to the dynamic ordering of contract events, i.e. calls of its functions, and enable potential exploits of millions of USD worth of crypto-coins. Previous techniques to detect EO bugs have been restricted to those bugs that involve just one or two event orderings. Our work provides a new formulation of the general class of EO bugs arising in long permutations of such events by using techniques from concurrent program analysis. The technical challenge in detecting EO bugs in blockchain contracts is the inherent combinatorial blowup in path and state space analysis, even for simple contracts. We propose the first use of partial-order reduction techniques, using automatically extracted happens-before relations along with several dynamic symbolic execution optimizations. We build EthRacer, an automatic analysis tool that runs directly on Ethereum bytecode and requires no hints from users. It flags 8\% of over 10, 000 contracts analyzed, providing compact event traces (witnesses) that human analysts can examine in only a few minutes per contract. More than half of the flagged contracts are likely to have unintended behaviour.},
+	OPTurldate = {2022-12-19},
+	OPTbooktitle = {Proceedings of the 28th {ACM} {SIGSOFT} {International} {Symposium} on {Software} {Testing} and {Analysis}},
+	booktitle = {{SIGSOFT} {ISSTA} 2019},
+	publisher = {ACM},
+	author = {Kolluri, Aashish and Nikolic, Ivica and Sergey, Ilya and Hobor, Aquinas and Saxena, Prateek},
+	OPTmonth = jul,
+	year = {2019},
+	OPTkeywords = {Ethereum, Concurrency, Happens-Before, Smart Contract Security},
+	pages = {363--373},
+	OPTfile = {Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/U9FQXCB6/Kolluri et al. - 2019 - Exploiting the laws of order in smart contracts.pdf:application/pdf},
+}
+
+
+@inproceedings{autoGenCommutativeCond,
+  title = {Automatic {{Generation}} of {{Precise}} and {{Useful Commutativity Conditions}}},
+  booktitle = {Tools and {{Algorithms}} for the {{Construction}} and {{Analysis}} of {{Systems}}},
+  author = {Bansal, Kshitij and Koskinen, Eric and Tripp, Omer},
+  editor = {Beyer, Dirk and Huisman, Marieke},
+  year = {2018},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {115--132},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-319-89960-2\_7},
+  abstract = {Reasoning about commutativity between data-structure operations is an important problem with applications including parallelizing compilers, optimistic parallelization and, more recently, Ethereum smart contracts. There have been research results on automatic generation of commutativity conditions, yet we are unaware of any fully automated technique to generate conditions that are both sound and effective.},
+  isbn = {978-3-319-89960-2},
+  langid = {english},
+  file = {/Users/mojtabaeshghie/Zotero/storage/R29G9EJ6/Bansal et al. - 2018 - Automatic Generation of Precise and Useful Commuta.pdf}
+}
+
+
+
+@misc{concurrentPersSC,
+	title = {A {Concurrent} {Perspective} on {Smart} {Contracts}},
+	url = {http://arxiv.org/abs/1702.05511},
+	OPTdoi = {10.48550/arXiv.1702.05511},
+	OPTabstract = {In this paper, we explore remarkable similarities between multi-transactional behaviors of smart contracts in cryptocurrencies such as Ethereum and classical problems of shared-memory concurrency. We examine two real-world examples from the Ethereum blockchain and analyzing how they are vulnerable to bugs that are closely reminiscent to those that often occur in traditional concurrent programs. We then elaborate on the relation between observable contract behaviors and well-studied concurrency topics, such as atomicity, interference, synchronization, and resource ownership. The described contracts-as-concurrent-objects analogy provides deeper understanding of potential threats for smart contracts, indicate better engineering practices, and enable applications of existing state-of-the-art formal verification techniques.},
+	OPTurldate = {2022-12-19},
+	publisher = {arXiv},
+	author = {Sergey, Ilya and Hobor, Aquinas},
+	OPTmonth = feb,
+	year = {2017},
+	OPTnote = {arXiv:1702.05511 [cs]},
+	OPTkeywords = {Computer Science - Distributed, Parallel, and Cluster Computing},
+	annote = {Comment: 15 pages},
+	OPTfile = {arXiv Fulltext PDF:/Users/mojtabaeshghie/Zotero/storage/7JZSVSN3/Sergey and Hobor - 2017 - A Concurrent Perspective on Smart Contracts.pdf:application/pdf;arXiv.org Snapshot:/Users/mojtabaeshghie/Zotero/storage/WQH23VCC/1702.html:text/html},
+}
+
+@misc{openzeppelinLib,
+author = {{OpenZeppelin}},
+title = {{OpenZeppelin} {Contracts}},
+url = {https://github.com/OpenZeppelin/openzeppelin-contracts},
+urldate = {2022-12-20},
+}
+
+
+
+@misc{openzeppelinNPM,
+	title = {@openzeppelin/contracts},
+	url = {https://www.npmjs.com/package/@openzeppelin/contracts},
+	abstract = {Secure Smart Contract library for Solidity. Latest version: 4.8.0, last published: a month ago. Start using @openzeppelin/contracts in your project by running `npm i @openzeppelin/contracts`. There are 1265 other projects in the npm registry using @openzeppelin/contracts.},
+	language = {en},
+	urldate = {2022-12-20},
+	journal = {npm},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/X6QC5AGQ/contracts.html:text/html},
+}
+
+
+@misc{EthereumYellowPaper2022,
+	title = {Ethereum {Yellow} {Paper}},
+	copyright = {CC-BY-SA-4.0},
+	url = {https://github.com/ethereum/yellowpaper},
+	abstract = {The "Yellow Paper": Ethereum's formal specification},
+	urldate = {2022-12-22},
+	publisher = {ethereum},
+	month = dec,
+	year = {2022},
+	OPTnote = {original-date: 2014-04-02T04:09:12Z},
+}
+
+
+
+@inproceedings{makescsmarter,
+	address = {New York, NY, USA},
+	series = {{CCS} 2016},
+	title = {Making {Smart} {Contracts} {Smarter}},
+	isbn = {978-1-4503-4139-4},
+	url = {https://doi.org/10.1145/2976749.2978309},
+	doi = {10.1145/2976749.2978309},
+	abstract = {Cryptocurrencies record transactions in a decentralized data structure called a blockchain. Two of the most popular cryptocurrencies, Bitcoin and Ethereum, support the feature to encode rules or scripts for processing transactions. This feature has evolved to give practical shape to the ideas of smart contracts, or full-fledged programs that are run on blockchains. Recently, Ethereum's smart contract system has seen steady adoption, supporting tens of thousands of contracts, holding millions dollars worth of virtual coins. In this paper, we investigate the security of running smart contracts based on Ethereum in an open distributed network like those of cryptocurrencies. We introduce several new security problems in which an adversary can manipulate smart contract execution to gain profit. These bugs suggest subtle gaps in the understanding of the distributed semantics of the underlying platform. As a refinement, we propose ways to enhance the operational semantics of Ethereum to make contracts less vulnerable. For developers writing contracts for the existing Ethereum system, we build a symbolic execution tool called Oyente to find potential security bugs. Among 19, 336 existing Ethereum contracts, Oyente flags 8, 833 of them as vulnerable, including the TheDAO bug which led to a 60 million US dollar loss in June 2016. We also discuss the severity of other attacks for several case studies which have source code available and confirm the attacks (which target only our accounts) in the main Ethereum network.},
+	urldate = {2022-12-21},
+	booktitle = {Proceedings of the 2016 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
+	publisher = {Association for Computing Machinery},
+	author = {Luu, Loi and Chu, Duc-Hiep and Olickel, Hrishi and Saxena, Prateek and Hobor, Aquinas},
+	month = oct,
+	year = {2016},
+	keywords = {blockchain, cryptocurrencies, ethereum, smart contract, symbolic execution},
+	pages = {254--269},
+	file = {Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/QM5W57BL/Luu et al. - 2016 - Making Smart Contracts Smarter.pdf:application/pdf},
+}
+
+
+
+
+@misc{casinosource,
+	title = {mojtaba-eshghie/{CLawK}},
+	copyright = {MIT},
+	url = {https://github.com/mojtaba-eshghie/CLawK/blob/925bf9c9afe344c763963e0e40098c66420d1d6a/server/monitor/contracts/source/Casino.sol},
+	abstract = {CLawK (read "clock", short for Contract Law Keeper) is a Runtime Monitoring Tool of Smart Contracts via Dynamic Condition Response Graphs \{by @mojtaba-eshghie\}},
+	urldate = {2023-01-08},
+	author = {Eshghie, Mojtaba},
+	month = dec,
+	year = {2022},
+	OPTnote = {original-date: 2022-10-24T19:33:45Z},
+}
+
+
+@misc{escrowsource,
+	title = {mojtaba-eshghie/{CLawK}},
+	copyright = {MIT},
+	url = {https://github.com/mojtaba-eshghie/CLawK/blob/7b81b45e2ceec94da1a69a505bfe7b1369c4361e/server/monitor/contracts/source/escrow.sol},
+	abstract = {CLawK (read "clock", short for Contract Law Keeper) is a Runtime Monitoring Tool of Smart Contracts via Dynamic Condition Response Graphs \{by @mojtaba-eshghie\}},
+	urldate = {2023-01-08},
+	author = {Eshghie, Mojtaba},
+	month = dec,
+	year = {2022},
+	OPTnote = {original-date: 2022-10-24T19:33:45Z},
+}
+
+
+
+
+@misc{dcrmodelsinCLawK,
+	title = {{CLawK}/server/monitor/models at main · mojtaba-eshghie/{CLawK}},
+	url = {https://github.com/mojtaba-eshghie/CLawK/tree/main/server/monitor/models},
+	urldate = {2023-01-09},
+	file = {CLawK/server/monitor/models at main · mojtaba-eshghie/CLawK:/Users/mojtabaeshghie/Zotero/storage/Z4CAZK8A/models.html:text/html},
+}
+
+@inproceedings{rvethereum,
+	title = {Runtime {Verification} of {Ethereum} {Smart} {Contracts}},
+	doi = {10.1109/EDCC.2018.00036},
+	abstract = {The notion of smart contracts in distributed ledger systems have been hailed as a safe way of enforcing contracts between participating parties. However, unlike legal contracts, which talk about ideal behaviour and consequences of not adhering to such behaviour, smart contracts are by their very nature executable code, giving explicit instructions on how to achieve compliance. Executable specification languages, particularly Turing complete ones, are notoriously known for the difficulty of ensuring correctness, and recent incidents which led to huge financial losses due to bugs in smart contracts, have highlighted this issue. In this paper we show how standard techniques from runtime verification can be used in the domain of smart contracts, including a novel stake-based instrumentation technique which ensures that the violating party provides insurance for correct behaviour. The techniques we describe have been partially implemented in a proof-of-concept tool ContractLarva, which we discuss in this paper.},
+	booktitle = {2018 14th {European} {Dependable} {Computing} {Conference} ({EDCC})},
+	author = {Ellul, Joshua and Pace, Gordon J.},
+	year = {2018},
+	keywords = {Blockchain, Distributed ledger technology, Games, Law, Runtime, Runtime verification, Smart contracts},
+    publisher = {IEEE},
+	file = {IEEE Xplore Abstract Record:/Users/mojtabaeshghie/Zotero/storage/K49UWNC7/8530777.html:text/html;IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/I6X4RZPH/Ellul and Pace - 2018 - Runtime Verification of Ethereum Smart Contracts.pdf:application/pdf},
+}
+
+
+
+@inproceedings{fvPetriNets,
+	title = {Formal {Verification} of {Blockchain} {Smart} {Contract} {Based} on {Colored} {Petri} {Net} {Models}},
+	volume = {2},
+	OPTdoi = {10.1109/COMPSAC.2019.10265},
+	OPTabstract = {A smart contract is a computer protocol intended to digitally facilitate and enforce the negotiation of a contract in undependable environment. However, the number of attacks using the vulnerabilities of the smart contracts is also growing in recent years. Many solutions have been proposed in order to deal with them, such as documenting vulnerabilities or setting the security strategies. Among them, the most influential progress is made by the formal verification method. In this paper, we propose a formal verification method based on Colored Petri Nets (CPN) to verify smart contracts in blockchain system. First, we develop the smart contract models with possible attacker models based on hierarchical CPN modeling, then the smart contract models are executed by step-by-step simulation to validate their functional correctness, and finally we utilize the branch timing logic ASK-CTL based model checking technology in the CPN tools to detect latent vulnerabilities in smart contracts. We demonstrate that our CPN modeling based verification method can not only detect the logical vulnerabilities of the smart contract, but also consider the impacts of users behavior to find out potential non-logical vulnerabilities in the contracts, such as the vulnerabilities caused by the limitations of the Solidity language.},
+	OPTbooktitle = {2019 {IEEE} 43rd {Annual} {Computer} {Software} and {Applications} {Conference} ({COMPSAC})},
+	booktitle = {{IEEE} {COMPSAC}},
+	author = {Liu, Zhentian and Liu, Jing},
+	OPTmonth = jul,
+	year = {2019},
+	OPTnote = {ISSN: 0730-3157},
+	OPTkeywords = {Analytical models, Blockchain, blockchain, smart contract, formal verification, CPN, Petri nets, Security, Smart contracts, Tools},
+	pages = {555--560},
+}
+
+
+
+@misc{nomadNomadBridgeHack2022,
+	title = {Nomad {Bridge} {Hack}: {Root} {Cause} {Analysis}},
+	shorttitle = {Nomad {Bridge} {Hack}},
+	url = {https://medium.com/nomad-xyz-blog/nomad-bridge-hack-root-cause-analysis-875ad2e5aacd},
+	abstract = {High-level Issue},
+	language = {en},
+	urldate = {2023-01-26},
+	journal = {Nomad},
+	author = {Nomad},
+	month = aug,
+	year = {2022},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/93C2QYPA/nomad-bridge-hack-root-cause-analysis-875ad2e5aacd.html:text/html},
+}
+
+
+
+@inproceedings{solinomic,
+	address = {Cham},
+	series = {Lecture {Notes} in {Networks} and {Systems}},
+	title = {{SoliNomic}: {A} {Self}-modifying {Smart} {Contract} {Game} {Exploring} {Reflexivity} in {Law}},
+	isbn = {978-3-030-93780-5},
+	shorttitle = {{SoliNomic}},
+	doi = {10.1007/978-3-030-93780-5_1},
+	abstract = {Ellul, JoshuaPace, Gordon J.Smart Contracts built on Blockchain systems have brought about the ability to deploy code that is tamperproof, verifiable and guaranteed to do exactly what it is written to do over a network of decentralised systems. This enables for decentralised (and centralised) organisations to define rules for particular operations, or even for the entire organisations’ decision-making processes. The rules, decision making processes and ability to alter both the rules and processes are encoded within smart contracts. Nomic was a game of self-modifying rules originally meant to explore self-reference and amendment from a regulatory perspective. In this paper we explore the encoding of such a rule system formally as self-modifying yet otherwise tamper-proof code in smart contracts.},
+	language = {en},
+	booktitle = {Disruptive {Technologies} in {Media}, {Arts} and {Design}},
+	publisher = {Springer International Publishing},
+	author = {Ellul, Joshua and Pace, Gordon J.},
+	year = {2022},
+	keywords = {Blockchain, Blockchain game, Nomic, Normative reasoning, Smart contracts},
+	pages = {3--14},
+	file = {Ellul and Pace - 2022 - SoliNomic A Self-modifying Smart Contract Game Ex.pdf:/Users/mojtabaeshghie/Zotero/storage/SWUTP4XP/Ellul and Pace - 2022 - SoliNomic A Self-modifying Smart Contract Game Ex.pdf:application/pdf},
+}
+
+
+
+@inproceedings{EmpiricalAnalysisSmart2017,
+	address = {Cham},
+	series = {LNCS},
+	title = {An {Empirical} {Analysis} of {Smart} {Contracts}: {Platforms}, {Applications}, and {Design} {Patterns}},
+	isbn = {978-3-319-70278-0},
+	shorttitle = {An {Empirical} {Analysis} of {Smart} {Contracts}},
+	abstract = {Smart contracts are computer programs that can be consistently executed by a network of mutually distrusting nodes, without the arbitration of a trusted authority. Because of their resilience to tampering, smart contracts are appealing in many scenarios, especially in those which require transfers of money to respect certain agreed rules (like in financial services and in games). Over the last few years many platforms for smart contracts have been proposed, and some of them have been actually implemented and used. We study how the notion of smart contract is interpreted in some of these platforms. Focussing on the two most widespread ones, Bitcoin and Ethereum, we quantify the usage of smart contracts in relation to their application domain. We also analyse the most common programming patterns in Ethereum, where the source code of smart contracts is available.},
+	language = {en},
+	booktitle = {Financial {Cryptography} and {Data} {Security}},
+	publisher = {Springer},
+	author = {Bartoletti, Massimo and Pompianu, Livio},
+	year = {2017},
+	pages = {494--509},
+}
+%	doi = {$10.1007/978-3-319-70278-0_31$},
+
+
+
+@inproceedings{SCModelingAdoptedForBP,
+	address = {Cham},
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {Model {Checking} of {Solidity} {Smart} {Contracts} {Adopted} for {Business} {Processes}},
+	isbn = {978-3-030-91431-8},
+	doi = {10.1007/978-3-030-91431-8_8},
+	abstract = {Several features of the Blockchain technology are well aligned with critical issues in the Business Process Management (BPM) field, and yet adopting Blockchain for BPM should not be taken lightly. In fact, the security of smart contracts, which are one of the main elements of the Blockchain that make the integration with BPM possible, has proved to be vulnerable. It is therefore crucial for the protection of the designed business processes to prove the correctness of the smart contracts to be deployed on a blockchain. In this paper we propose a formal approach based on the transformation of Solidity smart contracts, with consideration of the BPM context in which they are used, into a Hierarchical Coloured Petri net. We express a set of smart contract vulnerabilities as temporal logic formulae and use the Helena model checker to, not only detect such vulnerabilities while discerning their exploitability, but also check other temporal-based contract-specific properties.},
+	language = {en},
+	booktitle = {Service-{Oriented} {Computing}},
+	publisher = {Springer},
+	author = {Garfatta, Ikram and Klai, Kaïs and Graïet, Mohamed and Gaaloul, Walid},
+	year = {2021},
+	keywords = {Blockchain, Business process management, Hierarchical coloured petri nets, Model checking, Smart contracts, Solidity, Temporal properties},
+	pages = {116--132},
+	file = {Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/GRWGQ2HD/Garfatta et al. - 2021 - Model Checking of Solidity Smart Contracts Adopted.pdf:application/pdf},
+}
+
+
+
+@misc{OpenzeppelinTokens,
+	title = {openzeppelin-contracts/contracts/token at master · {OpenZeppelin}/openzeppelin-contracts},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development. - openzeppelin-contracts/contracts/token at master · OpenZeppelin/openzeppelin-contracts},
+	language = {en},
+	urldate = {2023-02-07},
+	journal = {GitHub},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/HTSMNSTE/token.html:text/html},
+}
+
+
+
+@misc{authOpenzeppelin,
+	title = {openzeppelin-contracts/contracts/token at master · {OpenZeppelin}/openzeppelin-contracts},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development. - openzeppelin-contracts/contracts/token at master · OpenZeppelin/openzeppelin-contracts},
+	language = {en},
+	urldate = {2023-02-08},
+	journal = {GitHub},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/CPMPN42F/access.html:text/html},
+}
+
+
+
+@misc{timelockOpenZeppelin,
+	title = {{OpenZeppelin}/openzeppelin-contracts},
+	copyright = {MIT},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts/blob/8177c4620e049b2749c2069651d7d5b4691e23d2/contracts/governance/TimelockController.sol},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development.},
+	urldate = {2023-02-08},
+	publisher = {OpenZeppelin},
+	month = feb,
+	year = {2023},
+	OPTnote = {original-date: 2016-08-01T20:54:54Z},
+}
+
+
+
+@misc{destructibleOldOpenZeppelin,
+	title = {{OpenZeppelin} {Solidity}},
+	copyright = {MIT},
+	url = {https://github.com/ConsenSysMesh/openzeppelin-solidity/blob/d5f06ab32ff40bf447fa34bcdb997b54e2499ee0/contracts/lifecycle/Destructible.sol},
+	abstract = {OpenZeppelin, a framework to build secure smart contracts on Ethereum},
+	urldate = {2023-02-08},
+	publisher = {ConsenSys Mesh},
+	month = aug,
+	year = {2022},
+	OPTnote = {original-date: 2018-05-30T01:21:03Z},
+}
+
+
+
+
+@inproceedings{designPatternsGas,
+	title = {Design {Patterns} for {Gas} {Optimization} in {Ethereum}},
+	OPTdoi = {10.1109/IWBOSE50093.2020.9050163},
+	OPTabstract = {Blockchain technology is an emerging technology that allows new forms of decentralized architectures, designed to generate trust among users, without the intervention of mediators or knowledge between the parties. Since 2015, thanks to the introduction of Smart Contracts by Ethereum, it is possible to run programs on the blockchain, greatly extending the potential of this technology. The programming of Smart Contract, through the Solidity language is different from the traditional one. First of all, any action that requires to modify the blockchain costs gas, which corresponds to a fraction of the currency used by that given blockchain, and therefore to real money. Gas optimization is a unique challenge in this context and has obvious implications. This document aims to provide a set of design patterns and tips to help gas saving in developing Smart Contracts on Ethereum. The provided patterns are presented divided into five main categories, based on their features.},
+	OPTbooktitle = {2020 {IEEE} {International} {Workshop} on {Blockchain} {Oriented} {Software} {Engineering} ({IWBOSE})},
+	booktitle = {{IEEE} {IWBOSE}},
+ author = {Marchesi, Lodovica and Marchesi, Michele and Destefanis, Giuseppe and Barabino, Giulio and Tigano, Danilo},
+	OPTmonth = feb,
+	year = {2020},
+	OPTkeywords = {Blockchain, Blockchains, Codes, Conferences, Costs, design patterns, Ethereum, gas optimization, gas saving, Optimization, Programming, smart contracts, Smart contracts},
+	pages = {9--15},
+	OPTfile = {IEEE Xplore Abstract Record:/Users/mojtabaeshghie/Zotero/storage/2RZLWIWI/9050163.html:text/html;IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/L6FKFRNH/Marchesi et al. - 2020 - Design Patterns for Gas Optimization in Ethereum.pdf:application/pdf},
+}
+
+
+
+
+@misc{safeMathOpenzeppelin,
+	title = {openzeppelin-contracts/{SafeMath}.sol at master · {OpenZeppelin}/openzeppelin-contracts},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development. - openzeppelin-contracts/SafeMath.sol at master · OpenZeppelin/openzeppelin-contracts},
+	language = {en},
+	urldate = {2023-02-08},
+	journal = {GitHub},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/A7WZEGLK/math.html:text/html},
+}
+
+
+
+@misc{OpenzeppelinProxy,
+	title = {openzeppelin-contracts/{Proxy}.sol at master · {OpenZeppelin}/openzeppelin-contracts},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development. - openzeppelin-contracts/Proxy.sol at master · OpenZeppelin/openzeppelin-contracts},
+	language = {en},
+	urldate = {2023-02-08},
+	journal = {GitHub},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/363HWWFD/proxy.html:text/html},
+}
+
+
+
+
+
+@inproceedings{DesignPatterns2018,
+	title = {Design {Patterns} for {Smart} {Contracts} in the {Ethereum} {Ecosystem}},
+	OPTdoi = {10.1109/Cybermatics\_2018.2018.00255},
+	OPTabstract = {The idea to digitally facilitate contract law and business practices through computer programs has led to the notion of smart contracts. Today's most prominent smart contract ecosystem is Ethereum, a blockchain based distributed computing platform. Due to the inherent nature of blockchain based contract execution, missing low level programming abstractions, and the constant evolution of platform features and security considerations, writing correct and secure smart contracts for Ethereum is a difficult task. Based on a Multivocal Literature Research and an analysis of the gathered data based on qualitative research methods, we mined a number of design patterns providing design guidelines. We describe those patterns in detail and provide exemplary code for better illustration. Our research shows that the patterns are widely used to address application requirements and common problems. We expect generalizability of some or all of the patterns for other smart contract ecosystems, but this is outside of the scope of this study, which studied only smart contract patterns in Ethereum.},
+	OPTbooktitle = {2018 {IEEE} {International} {Conference} on {Internet} of {Things} ({iThings}) and {IEEE} {Green} {Computing} and {Communications} ({GreenCom}) and {IEEE} {Cyber}, {Physical} and {Social} {Computing} ({CPSCom}) and {IEEE} {Smart} {Data} ({SmartData})},
+	booktitle = {iThings/GreenCom/CPSCom/SmartData},
+	author = {Wöhrer, Maximilian and Zdun, Uwe},
+	OPTmonth = jul,
+	year = {2018},
+	OPTkeywords = {Blockchain, Ecosystems, Encoding, Programming, Security, Smart contracts},
+	pages = {1513--1520},
+	OPTfile = {IEEE Xplore Abstract Record:/Users/mojtabaeshghie/Zotero/storage/P7UB98HX/8726782.html:text/html;IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/SYNQQJG6/Wöhrer and Zdun - 2018 - Design Patterns for Smart Contracts in the Ethereu.pdf:application/pdf},
+}
+
+
+
+
+@misc{OpenZeppelinPullpayment,
+	title = {{OpenZeppelin}/openzeppelin-contracts},
+	copyright = {MIT},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts/blob/8177c4620e049b2749c2069651d7d5b4691e23d2/contracts/security/PullPayment.sol},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development.},
+	urldate = {2023-02-08},
+	publisher = {OpenZeppelin},
+	month = feb,
+	year = {2023},
+	OPTnote = {original-date: 2016-08-01T20:54:54Z},
+}
+
+
+
+
+@inproceedings{securityPatterns,
+	title = {Smart contracts: security patterns in the {Ethereum} ecosystem and {Solidity}},
+	shorttitle = {Smart contracts},
+	OPTdoi = {10.1109/IWBOSE.2018.8327565},
+	OPTabstract = {Smart contracts that build up on blockchain technologies are receiving great attention in new business applications and the scientific community, because they allow untrusted parties to manifest contract terms in program code and thus eliminate the need for a trusted third party. The creation process of writing well performing and secure contracts in Ethereum, which is today's most prominent smart contract platform, is a difficult task. Research on this topic has only recently started in industry and science. Based on an analysis of collected data with Grounded Theory techniques, we have elaborated several common security patterns, which we describe in detail on the basis of Solidity, the dominating programming language for Ethereum. The presented patterns describe solutions to typical security issues and can be applied by Solidity developers to mitigate typical attack scenarios.},
+	OPTbooktitle = {2018 {International} {Workshop} on {Blockchain} {Oriented} {Software} {Engineering} ({IWBOSE})},
+	booktitle = {IEEE {IWBOSE}},
+	author = {Wohrer, Maximilian and Zdun, Uwe},
+	OPTmonth = mar,
+	year = {2018},
+	OPTkeywords = {Contracts, Cryptography, Programming, Virtual machining, Writing},
+	pages = {2--8},
+	OPTfile = {IEEE Xplore Abstract Record:/Users/mojtabaeshghie/Zotero/storage/VB8HUS6K/8327565.html:text/html;IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/FG2X5B27/Wohrer and Zdun - 2018 - Smart contracts security patterns in the ethereum.pdf:application/pdf},
+}
+
+
+
+@misc{RGOpenzeppelin,
+	title = {{OpenZeppelin}/openzeppelin-contracts},
+	copyright = {MIT},
+	url = {https://github.com/OpenZeppelin/openzeppelin-contracts/blob/dfcc1d16c5efd0fd2a7abac56680810c861a9cd3/contracts/security/ReentrancyGuard.sol},
+	abstract = {OpenZeppelin Contracts is a library for secure smart contract development.},
+	urldate = {2023-02-10},
+	publisher = {OpenZeppelin},
+	month = feb,
+	year = {2023},
+	OPTnote = {original-date: 2016-08-01T20:54:54Z},
+}
+
+
+
+
+
+@misc{SolidStateSolidity2023,
+	author = {Solidstate},
+	title = {{SolidState} {Solidity}},
+	copyright = {MIT},
+	url = {https://github.com/solidstate-network/solidstate-solidity/blob/de7c9545ac015f42a03aa3a678000ec1ec4c14a4/contracts/access/access_control/AccessControl.sol},
+	abstract = {Upgradeable-first Solidity smart contract development library},
+	urldate = {2023-02-11},
+	month = feb,
+	year = {2023},
+	OPTnote = {original-date: 2020-10-08T03:01:01Z},
+}
+
+
+
+@misc{birthdayGiftContract,
+	title = {{BirthdayGift} {\textbar} {Address} 0x9828f591b21ee4ad4fd803fc7339588cb83a6b84 {\textbar} {Etherscan}},
+	url = {http://etherscan.io/address/0x9828f591b21ee4ad4fd803fc7339588cb83a6b84},
+	abstract = {The Contract Address 0x9828f591b21ee4ad4fd803fc7339588cb83a6b84 page allows users to view the source code, transactions, balances, and analytics for the contract address. Users can also interact and make transactions to the contract directly on Etherscan.},
+	language = {en},
+	urldate = {2023-02-11},
+	journal = {Ethereum (ETH) Blockchain Explorer},
+	author = {etherscan.io},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/WXXAGAYA/0x9828f591b21ee4ad4fd803fc7339588cb83a6b84.html:text/html},
+}
+
+
+
+@misc{EnglishAuctionSolidity,
+	title = {English {Auction} {\textbar} {Solidity} by {Example} {\textbar} 0.8.17},
+	url = {https://solidity-by-example.org/app/english-auction/},
+	urldate = {2023-02-14},
+	file = {English Auction | Solidity by Example | 0.8.17:/Users/mojtabaeshghie/Zotero/storage/PJKJ65LF/english-auction.html:text/html},
+}
+
+
+@misc{nomadbridge,
+	title = {Introduction},
+	url = {https://docs.nomad.xyz/nomad-101/introduction},
+	abstract = {A high-level introduction to Nomad},
+	language = {en},
+	urldate = {2023-02-16},
+}
+
+
+@misc{PrecautionsEthereum,
+title = {{Ethereum} {Smart} {Contract} {Best} {Practices}},
+author = {Consensys},
+url = {https://consensys.github.io/smart-contract-best-practices/development-recommendations/precautions/},
+urldate = {2023-02-17},
+}
+
+@misc{SpeedBumpsEthereum,
+	title = {Speed {Bumps} - {Ethereum} {Smart} {Contract} {Best} {Practices}},
+	url = {https://consensys.github.io/smart-contract-best-practices/development-recommendations/precautions/speed-bumps/},
+	urldate = {2023-02-17},
+}
+
+
+
+@misc{RateLimitingEthereum,
+	title = {Rate {Limiting} - {Ethereum} {Smart} {Contract} {Best} {Practices}},
+	url = {https://consensys.github.io/smart-contract-best-practices/development-recommendations/precautions/rate-limiting/},
+	urldate = {2023-02-17},
+	file = {Rate Limiting - Ethereum Smart Contract Best Practices:/Users/mojtabaeshghie/Zotero/storage/WUA94U2L/rate-limiting.html:text/html},
+}
+
+
+
+
+@misc{SolidityPatternsWebsite,
+    author = {Fravoll},
+    title = {Solidity {Patterns}},
+    url = {https://fravoll.github.io/solidity-patterns/},
+    abstract = {A compilation of patterns and best practices for the smart contract programming language Solidity},
+    language = {en-US},
+    urldate = {2023-02-08}
+}
+
+
+@misc{hodlit,
+	title = {{HOLDIT} {\textbar} {Address} {0x24021d38DB53A938446eCB0a31B1267764d9d63D}},
+	url = {http://etherscan.io/address/0x24021d38DB53A938446eCB0a31B1267764d9d63D},
+	abstract = {The Contract Address 0x24021d38DB53A938446eCB0a31B1267764d9d63D page allows users to view the source code, transactions, balances, and analytics for the contract address. Users can also interact and make transactions to the contract directly on Etherscan.},
+	language = {en},
+	urldate = {2023-02-17},
+	journal = {Ethereum (ETH) Blockchain Explorer},
+	author = {etherscan.io},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/R7FJ6IGH/0x24021d38DB53A938446eCB0a31B1267764d9d63D.html:text/html},
+}
+
+
+@misc{escapable,
+    author = {giveth.io},
+	title = {common-contract-deps},
+	url = {https://github.com/Giveth/common-contract-deps/blob/094d36028eab30444314395016817735e57e9d77/contracts/Escapable.sol},
+	abstract = {Base layer smart contracts that Giveth likes to use :-D},
+	urldate = {2023-02-17},
+	publisher = {Giveth},
+	month = may,
+	year = {2021},
+	OPTnote = {original-date: 2017-09-29T13:11:48Z},
+}
+
+
+
+
+@article{EtheruemYellowPaper,
+	title = {{ETHEREUM}: {A} {SECURE} {DECENTRALISED} {GENERALISED} {TRANSACTION} {LEDGER}},
+	abstract = {The blockchain paradigm when coupled with cryptographically-secured transactions has demonstrated its utility through a number of projects, with Bitcoin being one of the most notable ones. Each such project can be seen as a simple application on a decentralised, but singleton, compute resource. We can call this paradigm a transactional singleton machine with shared-state.},
+	language = {en},
+	author = {Wood, Dr Gavin},
+	file = {Wood - ETHEREUM A SECURE DECENTRALISED GENERALISED TRANS.pdf:/Users/mojtabaeshghie/Zotero/storage/UWGV4FGR/Wood - ETHEREUM A SECURE DECENTRALISED GENERALISED TRANS.pdf:application/pdf},
+}
+
+@misc{ExplainedAkutarsNFT,
+  key = {Halborn2022},
+  title = {Explained: {The} {Akutars} {NFT} {Incident} ({April} 2022) - {Halborn} {Blockchain} {Security} {Firm}: {Ethical} {Hackers}, {Infosec} \& {Pen} {Tests}\vphantom{\{}\}},
+  shorttitle = {Explained},
+  url = {https://halborn.com/blog/post/explained-the-akutars-nft-incident-april-2022},
+  abstract = {In April 2022, the Akutars NFT project suffered a major security incident. Blockchain security firm Halborn explains what happened.},
+  urldate = {2023-02-19},
+  journal = {Halborn},
+}
+
+
+@inproceedings{dynamicVul,
+  title = {Dynamic {Vulnerability} {Detection} on {Smart} {Contracts} {Using} {Machine} {Learning}},
+  author = {Eshghie, Mojtaba and Artho, Cyrille and Gurov, Dilian},
+  booktitle = {EASE 2021},
+  year = {2021},
+  pages = {305--312},
+  publisher = {ACM},
+  abstract = {In this work we propose Dynamit, a monitoring framework to detect reentrancy vulnerabilities in Ethereum smart contracts. The novelty of our framework is that it relies only on transaction metadata and balance data from the blockchain system; our approach requires no domain knowledge, code instrumentation, or special execution environment. Dynamit extracts features from transaction data and uses a machine learning model to classify transactions as benign or harmful. Therefore, not only can we find the contracts that are vulnerable to reentrancy attacks, but we also get an execution trace that reproduces the attack. Using a random forest classifier, our model achieved more than 90 percent accuracy on 105 transactions, showing the potential of our technique.},
+  keywords = {Blockchain, Ethereum, Machine Learning for Dynamic Software Analysis, Smart Contracts, Vulnerability Detection},
+  isbn = {978-1-4503-9053-8},
+}
+%  doi = {10.1145/3463274.3463348},
+%  url = {https://doi.org/10.1145/3463274.3463348},
+
+
+@inproceedings{addingConcurrency2SC,
+	OPTaddress = {New York, NY, USA},
+	OPTseries = {{PODC} 2017},
+	title = {Adding {Concurrency} to {Smart} {Contracts}},
+	isbn = {978-1-4503-4992-5},
+	OPTurl = {https://doi.org/10.1145/3087801.3087835},
+	OPTdoi = {10.1145/3087801.3087835},
+	abstract = {Modern cryptocurrency systems, such as Ethereum, permit complex financial transactions through scripts called smart contracts. These smart contracts are executed many, many times, always without real concurrency. First, all smart contracts are serially executed by miners before appending them to the blockchain. Later, those contracts are serially re-executed by validators to verify that the smart contracts were executed correctly by miners. Serial execution limits system throughput and fails to exploit today's concurrent multicore and cluster architectures. Nevertheless, serial execution appears to be required: contracts share state, and contract programming languages have a serial semantics. This paper presents a novel way to permit miners and validators to execute smart contracts in parallel, based on techniques adapted from software transactional memory. Miners execute smart contracts speculatively in parallel, allowing non-conflicting contracts to proceed concurrently, and "discovering" a serializable concurrent schedule for a block's transactions, This schedule is captured and encoded as a deterministic fork-join program used by validators to re-execute the miner's parallel schedule deterministically but concurrently. Smart contract benchmarks run on a JVM with ScalaSTM show that a speedup of 1.33x can be obtained for miners and 1.69x for validators with just three concurrent threads.},
+	urldate = {2023-02-21},
+	OPTbooktitle = {Proceedings of the {ACM} {Symposium} on {Principles} of {Distributed} {Computing}},
+booktitle = {PODC},
+publisher = {ACM},
+	author = {Dickerson, Thomas and Gazzillo, Paul and Herlihy, Maurice and Koskinen, Eric},
+	OPTmonth = jul,
+	year = {2017},
+	OPTkeywords = {blockchain, concurrency, ethereum, fork-join, miners, smart contracts, validators},
+	pages = {303--312},
+	OPTfile = {Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/IZK632SV/Dickerson et al. - 2017 - Adding Concurrency to Smart Contracts.pdf:application/pdf},
+}
+
+
+
+@misc{SolidityCronJobs,
+	title = {Solidity {Cron} {Jobs}},
+	url = {https://docs.chain.link/chainlink-nodes/oracle-jobs/job-types/cron/},
+	abstract = {Chainlink is the most widely used oracle network for powering universally connected smart contracts, enabling any blockchain to access real-world data \& APIs.},
+	language = {en-us},
+	urldate = {2023-03-03},
+	journal = {Chainlink Documentation},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/XETKZ8XS/cron.html:text/html},
+}
+
+
+
+@misc{lotteryContract,
+	title = {ethereumlottery.io {\textbar} {Address} {0x302fE87B56330BE266599FAB2A54747299B5aC5B} {\textbar} {Etherscan}},
+	url = {http://etherscan.io/address/0x302fE87B56330BE266599FAB2A54747299B5aC5B},
+	abstract = {The Contract Address 0x302fE87B56330BE266599FAB2A54747299B5aC5B page allows users to view the source code, transactions, balances, and analytics for the contract address. Users can also interact and make transactions to the contract directly on Etherscan.},
+	language = {en},
+	urldate = {2023-03-14},
+	journal = {Ethereum (ETH) Blockchain Explorer},
+	author = {etherscan.io},
+}
+
+
+@misc{CompoundV2Docs,
+    author = {Compound},
+	title = {Compound v2 {\textbar} {Governance}},
+	url = {https://docs.compound.finance/v2/governance/},
+	abstract = {Compound is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.},
+	urldate = {2023-03-17},
+	file = {Snapshot:/Users/mojtabaeshghie/Zotero/storage/YGQ424SQ/governance.html:text/html},
+}
+
+
+
+@misc{GovernanceOpenZeppelinDocs,
+	title = {Governance - {OpenZeppelin}},
+	url = {https://docs.openzeppelin.com/contracts/4.x/api/governance},
+	language = {en},
+	urldate = {2023-03-20},
+}
+
+
+
+@article{governanceLiteratureReview,
+	title = {A systematic literature review on blockchain governance},
+	volume = {197},
+	issn = {0164-1212},
+	OPTurl = {https://www.sciencedirect.com/science/article/pii/S0164121222002527},
+	OPTdoi = {10.1016/j.jss.2022.111576},
+	OPTabstract = {Blockchain has been increasingly used as a component to enable decentralisation in software architecture for a variety of applications. Blockchain governance has received considerable attention to ensure the safe and appropriate use and evolution of blockchain, especially after the Ethereum DAO attack in 2016. However, there are no systematic efforts to analyse existing governance solutions. To understand the state-of-the-art of blockchain governance, we conducted a systematic literature review with 37 primary studies. The extracted data from primary studies are synthesised to answer identified research questions. The study results reveal several major findings: (1) governance can improve the adaptability and upgradability of blockchain, whilst the current studies neglect broader ethical responsibilities as the objectives of blockchain governance; (2) governance is along with the development process of a blockchain platform, while ecosystem-level governance process is missing, and; (3) the responsibilities and capabilities of blockchain stakeholders are briefly discussed, whilst the decision rights, accountability, and incentives of blockchain stakeholders are still under studied. We provide actionable guidelines for academia and practitioners to use throughout the lifecycle of blockchain, and discuss future trends to support researchers in this area.},
+	OPTlanguage = {en},
+	OPTurldate = {2023-03-20},
+	journal = {Journal of Systems and Software},
+	author = {Liu, Yue and Lu, Qinghua and Zhu, Liming and Paik, Hye-Young and Staples, Mark},
+	OPTmonth = mar,
+	year = {2023},
+	OPTkeywords = {Blockchain, Distributed ledger technology, DLT, Governance, SLR, Systematic literature review},
+	OPTpages = {111576},
+	OPTfile = {ScienceDirect Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/59J4R5B9/Liu et al. - 2023 - A systematic literature review on blockchain gover.pdf:application/pdf},
+}
+
+
+
+@book{gamma1995design,
+  title={Design patterns: elements of reusable object-oriented software},
+  author={Gamma, Erich and Helm, Richard and Johnson, Ralph and Johnson, Ralph E and Vlissides, John},
+  year={1995},
+  publisher={Pearson Deutschland GmbH}
+}
+
+
+
+@misc{AragonOSxProtocol2023,
+  title = {Aragon {{OSx Protocol}}},
+  year = {2023},
+  month = jun,
+  urldate = {2023-06-01},
+  abstract = {Aragon OSx Protocol},
+  copyright = {AGPL-3.0},
+  howpublished = {Aragon},
+  url={https://github.com/aragon/osx}
+}
+
+
+
+@misc{CompoundProtocol2023,
+  title = {Compound {{Protocol}}},
+  year = {2023},
+  month = jun,
+  urldate = {2023-06-01},
+  abstract = {The Compound On-Chain Protocol},
+  copyright = {BSD-3-Clause},
+  howpublished = {Compound},
+  url={https://github.com/compound-finance/compound-protocol}
+}
+
+
+
+@misc{SmartcontractkitChainlink2023,
+  title = {Smartcontractkit/Chainlink},
+  year = {2023},
+  month = jun,
+  urldate = {2023-06-01},
+  abstract = {node of the decentralized oracle network, bridging on and off-chain computation},
+  copyright = {MIT},
+  howpublished = {SmartContract},
+  keywords = {blockchain,chainlink,ethereum,golang,oracle,solidity},
+  url={https://github.com/smartcontractkit/chainlink},
+}
+
+
+
+@misc{EthereumDevelopmentDocumentation,
+  title = {Ethereum Development Documentation},
+  url = {ethereum.org},
+  urldate = {2023-06-01},
+  abstract = {Introducing the ethereum.org developer documentation.},
+  langid = {english}
+}
+
+
+@misc{clawk,
+  title = {{{CLawK}}: {{Monitoring Business Processes}} in {{Smart Contracts}}},
+  shorttitle = {{{CLawK}}},
+  author = {Eshghie, Mojtaba and Ahrendt, Wolfgang and Artho, Cyrille and Hildebrandt, Thomas Troels and Schneider, Gerardo},
+  year = {2023},
+  month = may,
+  number = {arXiv:2305.08254},
+  eprint = {2305.08254},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2305.08254},
+  urldate = {2023-06-01},
+  abstract = {Smart contracts embody complex business processes that can be difficult to analyze statically. In this paper, we present CLawK, a runtime monitoring tool that leverages business process specifications written in DCR graphs to provide runtime verification of smart contract execution. We demonstrate how CLawK can detect and flag deviations from specified behaviors in smart contracts deployed in the Ethereum network without code instrumentation and any additional gas costs.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Cryptography and Security,Computer Science - Software Engineering}
+}
+
+
+
+
+
+
+@inproceedings{EVMStar,
+	title = {{EVM}: {From} {Offline} {Detection} to {Online} {Reinforcement} for {Ethereum} {Virtual} {Machine}},
+	shorttitle = {{EVM}},
+	doi = {10.1109/SANER.2019.8668038},
+	abstract = {Attacks on transactions of Ethereum could be dangerous because they could lead to a big loss of money. There are many tools detecting vulnerabilities in smart contracts trying to avoid potential attacks. However, we found that there are still many missed vulnerabilities in contracts. Motivated by this, we propose a methodology to reinforce EVM to stop dangerous transactions in real time even when the smart contract contains vulnerabilities. Basically, the methodology consists of three steps: monitoring strategy definition, opcode-structure maintenance and EVM instrumentation. Monitoring strategy definition refers to the specific rule to test whether there is a dangerous operation during transaction execution. Opcode-structure maintenance is to maintain a structure to store the rule related opcodes and analyze it before an operation execution. EVM instrumentation inserts the monitoring strategy, interrupting mechanism and the opcode-structure operations in EVM source code. For evaluation, we implement EVM* on js-evm, a widely-used EVM platform written in javascript. We collect 10 contracts online with known bugs and use each contract to execute a dangerous transaction, all of them have been interrupted by our reinforced EVM*, while the original EVM permits all attack transactions. For the time overhead, the reinforced EVM* is slower than the original one by 20-30\%, which is tolerable for the financial critical applications.},
+	booktitle = {2019 {IEEE} 26th {International} {Conference} on {Software} {Analysis}, {Evolution} and {Reengineering} ({SANER})},
+	author = {Ma, Fuchen and Fu, Ying and Ren, Meng and Wang, Mingzhe and Jiang, Yu and Zhang, Kaixiang and Li, Huizhong and Shi, Xiang},
+	month = feb,
+	year = {2019},
+	note = {ISSN: 1534-5351},
+	keywords = {Blockchain security, Computer bugs, Ethereum, EVM defending, Instruments, Maintenance engineering, Monitoring, Smart contracts, Tools},
+	pages = {554--558},
+	file = {IEEE Xplore Abstract Record:/Users/mojtabaeshghie/Zotero/storage/MBH9C442/8668038.html:text/html;IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/G8QA3EUY/Ma et al. - 2019 - EVM From Offline Detection to Online Reinforcemen.pdf:application/pdf},
+}
+
+@inproceedings{EASYFLOW,
+	title = {{EASYFLOW}: {Keep} {Ethereum} {Away} from {Overflow}},
+	shorttitle = {{EASYFLOW}},
+	doi = {10.1109/ICSE-Companion.2019.00029},
+	abstract = {While Ethereum smart contracts enabled a wide range of blockchain applications, they are extremely vulnerable to different forms of security attacks. Due to the fact that transactions to smart contracts commonly involve cryptocurrency transfer, any successful attacks can lead to money loss or even financial disorder. In this paper, we focus on the overflow attacks in Ethereum, mainly because they widely rooted in many smart contracts and comparatively easy to exploit. We have developed EASYFLOW, an overflow detector at Ethereum Virtual Machine level. The key insight behind EASYFLOW is a taint analysis based tracking technique to analyze the propagation of involved taints. Specifically, EASYFLOW can not only divide smart contracts into safe contracts, manifested overflows, well-protected overflows and potential overflows, but also automatically generate transactions to trigger potential overflows. In our preliminary evaluation, EASYFLOW managed to find potentially vulnerable Ethereum contracts with little runtime overhead. A demo video of EASYFLOW is at https://youtu.be/QbUJkQI0L6o.},
+	booktitle = {2019 {IEEE}/{ACM} 41st {International} {Conference} on {Software} {Engineering}: {Companion} {Proceedings} ({ICSE}-{Companion})},
+	author = {Gao, Jianbo and Liu, Han and Liu, Chao and Li, Qingshan and Guan, Zhi and Chen, Zhong},
+	month = may,
+	year = {2019},
+	note = {ISSN: 2574-1934},
+	keywords = {Detectors, Ethereum, Generators, Libraries, Overflow Vulnerability, Smart Contract, Smart contracts, Taint Analysis, Tools, Virtual machining},
+	pages = {23--26},
+	file = {IEEE Xplore Full Text PDF:/Users/mojtabaeshghie/Zotero/storage/QMFX3P3T/Gao et al. - 2019 - EASYFLOW Keep Ethereum Away from Overflow.pdf:application/pdf},
+}
+
+@misc{ECF,
+	title = {Online {Detection} of {Effectively} {Callback} {Free} {Objects} with {Applications} to {Smart} {Contracts}},
+	url = {http://arxiv.org/abs/1801.04032},
+	doi = {10.48550/arXiv.1801.04032},
+	abstract = {Callbacks are essential in many programming environments, but drastically complicate program understanding and reasoning because they allow to mutate object's local states by external objects in unexpected fashions, thus breaking modularity. The famous DAO bug in the cryptocurrency framework Ethereum, employed callbacks to steal \$150M. We define the notion of Effectively Callback Free (ECF) objects in order to allow callbacks without preventing modular reasoning. An object is ECF in a given execution trace if there exists an equivalent execution trace without callbacks to this object. An object is ECF if it is ECF in every possible execution trace. We study the decidability of dynamically checking ECF in a given execution trace and statically checking if an object is ECF. We also show that dynamically checking ECF in Ethereum is feasible and can be done online. By running the history of all execution traces in Ethereum, we were able to verify that virtually all existing contracts, excluding the DAO or contracts with similar known vulnerabilities, are ECF. Finally, we show that ECF, whether it is verified dynamically or statically, enables modular reasoning about objects with encapsulated state.},
+	urldate = {2023-05-10},
+	publisher = {arXiv},
+	author = {Grossman, Shelly and Abraham, Ittai and Golan-Gueta, Guy and Michalevsky, Yan and Rinetzky, Noam and Sagiv, Mooly and Zohar, Yoni},
+	month = jan,
+	year = {2018},
+	note = {arXiv:1801.04032 [cs]},
+	keywords = {Computer Science - Programming Languages},
+	annote = {Comment: 31 pages. Technical Report for the paper presented in POPL'18 with the same title},
+	file = {arXiv Fulltext PDF:/Users/mojtabaeshghie/Zotero/storage/GKRGVWQ6/Grossman et al. - 2018 - Online Detection of Effectively Callback Free Obje.pdf:application/pdf;arXiv.org Snapshot:/Users/mojtabaeshghie/Zotero/storage/HSHB87UD/1801.html:text/html},
+}
+
+
+
+@misc{SolidityDesignPatternsModeling,
+  title = {{{SolidityDesignPatternsModeling}}/{{README}}.Md at Main {$\cdot$} Mojtaba-Eshghie/{{SolidityDesignPatternsModeling}}},
+  journal = {GitHub},
+  urldate = {2023-06-03},
+  abstract = {A collection of DCR graph model of popular design patterns in Solidity smart contracts. - SolidityDesignPatternsModeling/README.md at main {$\cdot$} mojtaba-eshghie/SolidityDesignPatternsModeling},
+  url = {https://github.com/mojtaba-eshghie/SolidityDesignPatternsModeling},
+  langid = {english}
+}
+
+
+@article{ISO8601,
+  title = {{{ISO}} 8601},
+  year = {2023},
+  month = jun,
+  journal = {Wikipedia},
+  urldate = {2023-06-21},
+  abstract = {ISO 8601 is an international standard covering the worldwide exchange and communication of date and time-related data. It is maintained by the International Organization for Standardization (ISO) and was first published in 1988, with updates in 1991, 2000, 2004, and 2019, and an amendment in 2022. The standard provides a well-defined, unambiguous method of representing calendar dates and times in worldwide communications, especially to avoid misinterpreting numeric dates and times when such data is transferred between countries with different conventions for writing numeric dates and times. ISO 8601 applies to these representations and formats: dates, in the Gregorian calendar (including the proleptic Gregorian calendar); times, based on the 24-hour timekeeping system, with optional UTC offset; time intervals; and combinations thereof. The standard does not assign specific meaning to any element of the dates/times represented: the meaning of any element depends on the context of its use. Dates and times represented cannot use words that do not have a specified numerical meaning within the standard (thus excluding names of years in the Chinese calendar), or that do not use computer characters (excludes images or sounds).In representations that adhere to the ISO 8601 interchange standard, dates and times are arranged such that the greatest temporal term (typically a year) is placed at the left and each successively lesser term is placed to the right of the previous term. Representations must be written in a combination of Arabic numerals and the specific computer characters (such as "-", ":", "T", "W", "Z") that are assigned specific meanings within the standard; that is, such commonplace descriptors of dates (or parts of dates) as "January", "Thursday", or "New Year's Day" are not allowed in interchange representations within the standard.},
+  copyright = {Creative Commons Attribution-ShareAlike License},
+  langid = {english},
+  annotation = {Page Version ID: 1160073691},
+  file = {/Users/mojtabaeshghie/Zotero/storage/QPM8RBHC/ISO_8601.html}
+}
