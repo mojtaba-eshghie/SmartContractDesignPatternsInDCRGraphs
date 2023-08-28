@@ -10,8 +10,8 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 | [Time Incentivizing](/design-pattern-models/time-incentivizing.md)                     | [View](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) |
 | [Automatic Deprecation](/design-pattern-models/automatic-deprecation.md)               | [View](https://dcrgraphs.net/tool/main/Graph?id=2f318f9f-8696-4237-89bd-177692439328) |
 | [Rate Limiting](/design-pattern-models/rate-limiting.md)                               | [View](https://dcrgraphs.net/tool/main/Graph?id=00307896-5158-418e-bd05-20b90c57f05c) | [Run](https://sim.dcrgraphs.net?code=00307896-5158-418e-bd05-20b90c57f05c) |
-| [Speed Bump (timed temporal-constrained)](/design-pattern-models/speed-bump.md)        | Data 3C                                                                               |
-| [Safe Self-Destruction](/design-pattern-models/safe-self-destruction.md)               | Data 3C                                                                               |
+| [Speed Bump (timed temporal-constrained)](/design-pattern-models/speed-bump.md)        | [view](https://dcrgraphs.net/tool/main/Graph?id=adcc8b39-de19-45c8-acb6-70f2bcbbc9e6) | [Run](https://sim.dcrgraphs.net?code=adcc8b39-de19-45c8-acb6-70f2bcbbc9e6) |
+| [Safe Self-Destruction](/design-pattern-models/safe-self-destruction.md)               | [View]()                                                                              | [Run](https://sim.dcrgraphs.net?code=983d043a-45f2-46c2-b863-a4bae3b42af1) |
 | [Access Control](/design-pattern-models/access-control.md)                             | Data 3C                                                                               |
 | [Commit and Reveal](/design-pattern-models/commit-and-reveal.md)                       | Data 3C                                                                               |
 | [Circuit Breaker / Emergency Stop](/design-pattern-models/circuit-breaker.md)          | Data 3C                                                                               |

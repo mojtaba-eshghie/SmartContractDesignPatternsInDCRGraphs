@@ -69,12 +69,12 @@ abstract contract Ballot {
 ## [Speed Bump (timed temporal-constrained)](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#speed-bump)
 
 [Download speed bump pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/speed-bump.xml)
-![Speed bump (timed temporal-constrained)](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/speed-bump.svg)
+![Speed bump (timed temporal-constrained)](/svg/speed-bump.svg)
 
 ## [Safe Self-Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#safe-self-destruction)
 
-[Download safe self destruction pattern DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/safe-self-destruction.xml)
-![Safe Self Destruction](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/safe-self-destruction.svg)
+[Download safe self destruction pattern DCR graph source](src/safe-self-destruction.xml)
+![Safe Self Destruction](svg/safe-self-destruction.svg)
 
 ## [Access Control](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#access-control)
 
