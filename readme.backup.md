@@ -46,9 +46,9 @@ abstract contract Ballot {
 
 ## [Time Incentivizing](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#time-incentivizing)
 
-![Time Incentivizing Solidity Design Pattern](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/svg/time-incentivizing.svg)
+![Time Incentivizing Solidity Design Pattern](/svg/time-incentivizing.svg)
 
-[Download time incentivizing DCR graph source](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/src/time-incentivizing.xml)
+[Download time incentivizing DCR graph source](/src/time-incentivizing.xml)
 
 ## [Automatic Deprecation](https://github.com/mojtaba-eshghie/SolidityDesignPatternsDCRGraph/blob/main/README.md#auto-deprecation)
 

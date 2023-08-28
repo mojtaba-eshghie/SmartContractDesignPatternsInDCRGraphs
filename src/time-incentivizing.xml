@@ -1,7 +1,7 @@
 <dcrgraph title="time-incentivizing" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1621660" hash="9B93019706FD5CB6EADFDA12F1F809B3" guid="E7EE7BD3-99A3-40A7-BBB7-09E00DA6E2C4" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
-        <revision id="3133657" type="minor" date="2023-03-13T21:39:36.210"/>
+        <graph id="1621660" hash="65F08B0B720E593D789C8165A503B2E1" guid="E7EE7BD3-99A3-40A7-BBB7-09E00DA6E2C4" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default" Keywords=""/>
+        <revision id="3293176" type="minor" date="2023-08-28T05:41:14.963"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
@@ -11,7 +11,7 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="350" yLoc="225"/>
+                            <location xLoc="300" yLoc="125"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -44,7 +44,7 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="650" yLoc="425"/>
+                            <location xLoc="500" yLoc="275"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -77,7 +77,7 @@
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="350" yLoc="425"/>
+                            <location xLoc="100" yLoc="275"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -106,53 +106,18 @@
                         <interfaces/>
                     </custom>
                 </event>
-                <event id="Activity3">
-                    <precondition message=""/>
-                    <custom>
-                        <visualization>
-                            <location xLoc="650" yLoc="225"/>
-                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
-                        </visualization>
-                        <roles>
-                            <role>bank</role>
-                        </roles>
-                        <readRoles>
-                            <readRole/>
-                        </readRoles>
-                        <groups>
-                            <group/>
-                        </groups>
-                        <phases>
-                            <phase/>
-                        </phases>
-                        <eventType/>
-                        <eventScope>private</eventScope>
-                        <eventTypeData/>
-                        <eventDescription/>
-                        <purpose/>
-                        <guide/>
-                        <insight use="false"/>
-                        <level>1</level>
-                        <sequence>5</sequence>
-                        <costs>0</costs>
-                        <eventData/>
-                        <interfaces/>
-                    </custom>
-                </event>
             </events>
             <subProcesses/>
             <distribution/>
             <labels>
                 <label id="pay loan"/>
-                <label id="increase interest"/>
+                <label id="fine"/>
                 <label id="give loan"/>
-                <label id="increase_interest"/>
             </labels>
             <labelMappings>
                 <labelMapping eventId="Activity1" labelId="pay loan"/>
-                <labelMapping eventId="Activity2" labelId="increase interest"/>
+                <labelMapping eventId="Activity2" labelId="fine"/>
                 <labelMapping eventId="Activity2_1" labelId="give loan"/>
-                <labelMapping eventId="Activity3" labelId="increase_interest"/>
             </labelMappings>
             <expressions/>
             <variables/>
@@ -180,7 +145,9 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers/>
+                    <highlightLayers>
+                        <highlightLayer default="true" name="description">DCR Process</highlightLayer>
+                    </highlightLayers>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
@@ -192,12 +159,12 @@
             <responses/>
             <coresponses/>
             <excludes>
-                <exclude sourceId="Activity2" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
+                <exclude sourceId="Activity1" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
+                <exclude sourceId="Activity2" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
             </excludes>
             <includes>
                 <include sourceId="Activity2_1" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
                 <include sourceId="Activity2_1" targetId="Activity1" filterLevel="1" description="" time="" groups=""/>
-                <include sourceId="Activity2" targetId="Activity3" filterLevel="1" description="" time="" groups=""/>
             </includes>
             <milestones>
                 <milestone sourceId="Activity2_1" targetId="Activity2" filterLevel="1" description="" time="P1M" groups="" link="Activity2_1--condition--Activity2"/>

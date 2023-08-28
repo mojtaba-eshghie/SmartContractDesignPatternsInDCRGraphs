@@ -5,7 +5,7 @@ A collection of DCR graphs model of popular design patterns in Solidity smart co
 | Design Pattern                                                                         | Public Model Link                                                                     |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Time-Constraint](/design-pattern-models/time-constraint.md)                           | [Link](https://dcrgraphs.net/tool/main/Graph?id=db8ca57a-5808-46a8-9c8d-b74c640a0d81) |
-| [Time Incentivizing](/design-pattern-models/time-incentivizing.md)                     | Data 3C                                                                               |
+| [Time Incentivizing](/design-pattern-models/time-incentivizing.md)                     | [Link](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) |
 | [Automatic Deprecation](/design-pattern-models/automatic-deprecation.md)               | Data 3C                                                                               |
 | [Rate Limiting](/design-pattern-models/rate-limiting.md)                               | Data 3C                                                                               |
 | [Speed Bump (timed temporal-constrained)](/design-pattern-models/speed-bump.md)        | Data 3C                                                                               |
