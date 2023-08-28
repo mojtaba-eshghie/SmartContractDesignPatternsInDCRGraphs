@@ -2,6 +2,8 @@
 
 A comprehensive collection of **cross-platform business process-level design patterns** of smart contracts modeled in DCR graphs semantics.
 
+### 📌 Table of Contents
+
 | Index | Design Pattern                                                                         | View The Model Publicly                                                               | Run Model Simulation                                                                 |
 | ----- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | 1     | [Time-Constraint](/design-pattern-models/time-constraint.md)                           | [View](https://dcrgraphs.net/tool/main/Graph?id=db8ca57a-5808-46a8-9c8d-b74c640a0d81) | [Run](https://sim.dcrgraphs.net?code=db8ca57a-5808-46a8-9c8d-b74c640a0d81)           |
@@ -23,3 +25,48 @@ A comprehensive collection of **cross-platform business process-level design pat
 | 17    | [Pull over push](/design-pattern-models/pull-over-push.md)                             | [Link](https://dcrgraphs.net/tool/main/Graph?id=41157b2a-d8ce-4832-8994-c54839987b91) | [Run](https://sim.dcrgraphs.net?code=41157b2a-d8ce-4832-8994-c54839987b91)           |
 | 18    | [Governance](/design-pattern-models/governance.md)                                     | [Link](https://dcrgraphs.net/tool/main/Graph?id=341dab9d-3bec-4164-80f1-4ee6543863f4) | [Run](https://sim.dcrgraphs.net?code=341dab9d-3bec-4164-80f1-4ee6543863f4)           |
 | 19    | [Upgradability](/design-pattern-models/upgradability.md)                               | [Link](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) | [Run](https://sim.dcrgraphs.net?code=9333f84f-8273-43cb-90a5-e9a61b053bc7)           |
+
+### 🚀 DCR Graphs as a Formalism For Smart Contract Design Patterns
+
+---
+
+Design patterns are tried-and-true solutions to recurring problems, acting as templates to address well-known challenges\[[4](#4)\]. When it comes to smart contracts, security is paramount as they manage funds, reactively execute rules, and are immutable or complicated to upgrade \[[1](#1), [2](#2)\]. Given the immutable and transparent nature of blockchain, any vulnerability can lead to irreversible consequences \[[6](#6)\]. This is where DCR (Dynamic Condition Response) graphs come into play \[[5](#5)\]. As a formalism, DCR graphs provide an encoding of the business process-level (contract-level) design of a contract, capturing its roles, action ordering, and time-based semantics. By leveraging DCR graphs, developers can visually represent and analyze the intricate logic of smart contracts, ensuring that they adhere to best practices and are free from potential pitfalls. It's a fusion of traditional design wisdom with cutting-edge formal verification, ensuring that smart contracts not only function as intended but also stand robust against security threats.
+
+### 📚 Cite Our Paper
+
+Use the following _bibtex_ entry to cite our work:
+
+```bibtex
+@misc{CaptureSCDesignWithDCR,
+  title = {Capturing {{Smart Contract Design}} with {{DCR Graphs}}},
+  author = {Eshghie, Mojtaba and Ahrendt, Wolfgang and Artho, Cyrille and Hildebrandt, Thomas Troels and Schneider, Gerardo},
+  year = {2023},
+  month = may,
+  number = {arXiv:2305.04581},
+  eprint = {2305.04581},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2305.04581},
+  urldate = {2023-08-28},
+  abstract = {Smart contracts manage blockchain assets. While smart contracts embody business processes, their platforms are not process-aware. Mainstream smart contract programming languages such as Solidity do not have explicit notions of roles, action dependencies, and time. Instead, these concepts are implemented in program code. This makes it very hard to design and analyze smart contracts. We argue that DCR graphs are a suitable formalization tool for smart contracts because they explicitly and visually capture these features. We utilize this expressiveness to show that many common high-level design patterns in smart-contract applications can be naturally modeled this way. Applying these patterns shows that DCR graphs facilitate the development and analysis of correct and reliable smart contracts by providing a clear and easy-to-understand specification.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computers and Society,Computer Science - Formal Languages and Automata Theory,Computer Science - Software Engineering}
+}
+```
+
+---
+
+📣 **Feedback & Contributions**: We welcome community feedback and contributions. If you have a design pattern that isn't listed here or suggestions to improve existing ones, please raise an issue or submit a pull request.
+
+---
+
+**References**:
+
+1. <span id="1"> N. Atzei, M. Bartoletti, and T. Cimoli, ‘A Survey of Attacks on Ethereum Smart Contracts SoK’, in Proceedings of the 6th International Conference on Principles of Security and Trust - Volume 10204, Berlin, Heidelberg: Springer-Verlag, Apr. 2017, pp. 164–186. doi: 10.1007/978-3-662-54455-6_8.</span>
+2. <span id="2">P. Tolmach, Y. Li, S.-W. Lin, Y. Liu, and Z. Li, ‘A Survey of Smart Contract Formal Specification and Verification’, ACM Comput. Surv., vol. 54, no. 7, p. 148:1-148:38, Jul. 2021, doi: 10.1145/3464421.</span>
+3. <span id="3">T. T. Hildebrandt, H. Normann, M. Marquard, S. Debois, and T. Slaats, ‘Decision Modelling in Timed Dynamic Condition Response Graphs with Data’, in Business Process Management Workshops, A. Marrella and B. Weber, Eds., in Lecture Notes in Business Information Processing. Cham: Springer International Publishing, 2022, pp. 362–374. doi: 10.1007/978-3-030-94343-1_28.</span>
+4. <span id="4">E. Gamma, R. Helm, R. Johnson, J. Vlissides, and G. Booch, Design Patterns: Elements of Reusable Object-Oriented Software, 1st edition. Reading, Mass: Addison-Wesley Professional, 1994.</span>
+5. <span id="5">T. Slaats, R. R. Mukkamala, T. Hildebrandt, and M. Marquard, ‘Exformatics Declarative Case Management Workflows as DCR Graphs’, in Business Process Management, F. Daniel, J. Wang, and B. Weber, Eds., in Lecture Notes in Computer Science. Berlin, Heidelberg: Springer, 2013, pp. 339–354. doi: 10.1007/978-3-642-40176-3_28.</span>
+6. <span id="6">L. Luu, D.-H. Chu, H. Olickel, P. Saxena, and A. Hobor, ‘Making Smart Contracts Smarter’, in Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, in CCS ’16. New York, NY, USA: Association for Computing Machinery, Oct. 2016, pp. 254–269. doi: 10.1145/2976749.2978309.</span>
+
+---
