@@ -1,21 +1,95 @@
 <dcrgraph title="commit-and-reveal" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
     <meta>
-        <graph id="1621678" hash="2999A702FF187BFF8DAD71131E561D02" guid="3A39918D-E9AC-4E74-88F6-7A1CE176515D" OwnerName="Mojtaba Eshghie" OwnerId="127017" categoryId="6830" categoryTitle="Default"/>
-        <revision id="3135727" type="minor" date="2023-03-14T15:52:13.130"/>
+        <graph id="1623995" hash="746F0B9ADBB1876E1AC3BA82C17D72B5" guid="BE7101D4-6B98-413B-91E5-DE8BD4390D3B" OwnerName="Thomas Hildebrandt" OwnerId="248" categoryId="343" categoryTitle="Default" Keywords=""/>
+        <revision id="3294228" type="minor" date="2023-08-28T19:11:48.093"/>
         <organization id="1" name="Community"/>
     </meta>
     <specification>
         <resources>
             <events>
-                <event id="Activity2" type="subprocess">
+                <event id="commit">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="475" yLoc="75"/>
+                            <location xLoc="150" yLoc="125"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
-                            <role/>
+                            <role>Committer</role>
+                            <role>Opponent</role>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>1</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="1" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="reveal">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="450" yLoc="125"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role>Revealer</role>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>2</sequence>
+                        <costs>0</costs>
+                        <eventData>
+                            <dataType sequence="2" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
+                            <validationRules/>
+                        </eventData>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="hash_of_reveal" computation="hash_of_reveal-computation">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="450" yLoc="275"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role>Decider</role>
+                            <role>Opponent</role>
                         </roles>
                         <readRoles>
                             <readRole/>
@@ -39,48 +113,12 @@
                         <eventData/>
                         <interfaces/>
                     </custom>
-                    <event id="secret">
-                        <precondition message=""/>
-                        <custom>
-                            <visualization>
-                                <location xLoc="500" yLoc="125"/>
-                                <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
-                            </visualization>
-                            <roles>
-                                <role/>
-                            </roles>
-                            <readRoles>
-                                <readRole/>
-                            </readRoles>
-                            <groups>
-                                <group/>
-                            </groups>
-                            <phases>
-                                <phase/>
-                            </phases>
-                            <eventType/>
-                            <eventScope>private</eventScope>
-                            <eventTypeData/>
-                            <eventDescription/>
-                            <purpose/>
-                            <guide/>
-                            <insight use="false"/>
-                            <level>1</level>
-                            <sequence>4</sequence>
-                            <costs>0</costs>
-                            <eventData>
-                                <dataType sequence="4" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
-                                <validationRules/>
-                            </eventData>
-                            <interfaces/>
-                        </custom>
-                    </event>
                 </event>
-                <event id="hashedNumber">
+                <event id="Activity3">
                     <precondition message=""/>
                     <custom>
                         <visualization>
-                            <location xLoc="250" yLoc="125"/>
+                            <location xLoc="750" yLoc="275"/>
                             <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
                         </visualization>
                         <roles>
@@ -103,12 +141,42 @@
                         <guide/>
                         <insight use="false"/>
                         <level>1</level>
-                        <sequence>6</sequence>
+                        <sequence>4</sequence>
                         <costs>0</costs>
-                        <eventData>
-                            <dataType sequence="6" width="small" min="NaN" max="NaN" placeholder="" hinttext="">int</dataType>
-                            <validationRules/>
-                        </eventData>
+                        <eventData/>
+                        <interfaces/>
+                    </custom>
+                </event>
+                <event id="Activity4">
+                    <precondition message=""/>
+                    <custom>
+                        <visualization>
+                            <location xLoc="150" yLoc="275"/>
+                            <colors bg="#f9f7ed" textStroke="#000000" stroke="#cccccc"/>
+                        </visualization>
+                        <roles>
+                            <role/>
+                        </roles>
+                        <readRoles>
+                            <readRole/>
+                        </readRoles>
+                        <groups>
+                            <group/>
+                        </groups>
+                        <phases>
+                            <phase/>
+                        </phases>
+                        <eventType/>
+                        <eventScope>private</eventScope>
+                        <eventTypeData/>
+                        <eventDescription/>
+                        <purpose/>
+                        <guide/>
+                        <insight use="false"/>
+                        <level>1</level>
+                        <sequence>5</sequence>
+                        <costs>0</costs>
+                        <eventData/>
                         <interfaces/>
                     </custom>
                 </event>
@@ -116,17 +184,25 @@
             <subProcesses/>
             <distribution/>
             <labels>
-                <label id="Reveal"/>
-                <label id="Reveal"/>
                 <label id="Commit"/>
+                <label id="Reveal"/>
+                <label id="Decide"/>
+                <label id="Pass"/>
+                <label id="Fail"/>
             </labels>
             <labelMappings>
-                <labelMapping eventId="Activity2" labelId="Reveal"/>
-                <labelMapping eventId="secret" labelId="Reveal"/>
-                <labelMapping eventId="hashedNumber" labelId="Commit"/>
+                <labelMapping eventId="commit" labelId="Commit"/>
+                <labelMapping eventId="reveal" labelId="Reveal"/>
+                <labelMapping eventId="hash_of_reveal" labelId="Decide"/>
+                <labelMapping eventId="Activity3" labelId="Pass"/>
+                <labelMapping eventId="Activity4" labelId="Fail"/>
             </labelMappings>
             <expressions>
-                <expression id="secret-path-secret--response" value="hashedNumber!=secret"/>
+                <expression id="hash_of_reveal-path-Activity3--include" value="commit = hash_of_reveal"/>
+                <expression id="hash_of_reveal-path-Activity4--include" value="commit != hash_of_reveal"/>
+                <expression id="hash_of_reveal-path-Activity3--exclude" value="commit != hash_of_reveal"/>
+                <expression id="hash_of_reveal-path-Activity4--exclude" value="commit = hash_of_reveal"/>
+                <expression id="hash_of_reveal-computation" value="hash(reveal)"/>
             </expressions>
             <variables/>
             <variableAccesses>
@@ -134,7 +210,14 @@
             </variableAccesses>
             <custom>
                 <keywords/>
-                <roles/>
+                <roles>
+                    <role description="" specification="">Committer</role>
+                    <role description="" specification="">Decider</role>
+                    <role description="" specification="">Opponent</role>
+                    <role description="" specification="">Player</role>
+                    <role description="" specification="">Revealer</role>
+                    <role description="" specification="">System</role>
+                </roles>
                 <groups/>
                 <phases/>
                 <eventTypes/>
@@ -158,20 +241,24 @@
             </custom>
         </resources>
         <constraints>
-            <conditions/>
+            <conditions>
+                <condition sourceId="commit" targetId="reveal" filterLevel="1" description="" time="" groups=""/>
+            </conditions>
             <responses>
-                <response sourceId="secret" targetId="secret" filterLevel="1" description="" time="" groups="" expressionId="secret-path-secret--response"/>
-                <response sourceId="hashedNumber" targetId="secret" filterLevel="1" description="" time="" groups=""/>
+                <response sourceId="reveal" targetId="hash_of_reveal" filterLevel="1" description="" time="" groups=""/>
+                <response sourceId="commit" targetId="reveal" filterLevel="1" description="" time="" groups=""/>
             </responses>
             <coresponses/>
             <excludes>
-                <exclude sourceId="Activity2" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
+                <exclude sourceId="hash_of_reveal" targetId="Activity3" filterLevel="1" description="" time="" groups="" expressionId="hash_of_reveal-path-Activity3--exclude"/>
+                <exclude sourceId="hash_of_reveal" targetId="Activity4" filterLevel="1" description="" time="" groups="" expressionId="hash_of_reveal-path-Activity4--exclude"/>
             </excludes>
             <includes>
-                <include sourceId="hashedNumber" targetId="Activity2" filterLevel="1" description="" time="" groups=""/>
+                <include sourceId="hash_of_reveal" targetId="Activity3" filterLevel="1" description="" time="" groups="" expressionId="hash_of_reveal-path-Activity3--include"/>
+                <include sourceId="hash_of_reveal" targetId="Activity4" filterLevel="1" description="" time="" groups="" expressionId="hash_of_reveal-path-Activity4--include"/>
             </includes>
             <milestones>
-                <milestone sourceId="secret" targetId="hashedNumber" filterLevel="1" description="" time="" groups=""/>
+                <milestone sourceId="reveal" targetId="commit" filterLevel="1" description="" time="" groups=""/>
             </milestones>
             <updates/>
             <spawns/>
@@ -186,8 +273,11 @@
             <globalStore/>
             <executed/>
             <included>
-                <event id="secret"/>
-                <event id="hashedNumber"/>
+                <event id="commit"/>
+                <event id="reveal"/>
+                <event id="hash_of_reveal"/>
+                <event id="Activity3"/>
+                <event id="Activity4"/>
             </included>
             <pendingResponses/>
         </marking>
