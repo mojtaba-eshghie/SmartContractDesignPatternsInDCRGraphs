@@ -23,8 +23,8 @@ A comprehensive collection of **cross-platform business process-level design pat
 | 15    | [Oracle](/design-pattern-models/oracle.md)                                             | [View](https://dcrgraphs.net/tool/main/Graph?id=3e9c3448-026c-4cda-855a-da0e3d9500c6) | [Run](https://sim.dcrgraphs.net?code=3e9c3448-026c-4cda-855a-da0e3d9500c6)           |
 | 16    | [Token Patterns](/design-pattern-models/tokens.md)                             | [View](https://dcrgraphs.net/tool/main/Graph?id=e53d53e3-24ad-4fc9-90bf-b127a4b7d7f6) | [Run](https://sim.dcrgraphs.net?code=e53d53e3-24ad-4fc9-90bf-b127a4b7d7f6)           |
 | 17    | [Pull over push](/design-pattern-models/pull-over-push.md)                             | [View](https://dcrgraphs.net/tool/main/Graph?id=41157b2a-d8ce-4832-8994-c54839987b91) | [Run](https://sim.dcrgraphs.net?code=41157b2a-d8ce-4832-8994-c54839987b91)           |
-| 19    | [Upgradability](/design-pattern-models/upgradability.md)                               | [View](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) | [Run](https://sim.dcrgraphs.net?code=9333f84f-8273-43cb-90a5-e9a61b053bc7)           |
-| 18    | [Governance](/design-pattern-models/governance.md)                                     | [View](https://dcrgraphs.net/tool/main/Graph?id=341dab9d-3bec-4164-80f1-4ee6543863f4) | [Run](https://sim.dcrgraphs.net?code=341dab9d-3bec-4164-80f1-4ee6543863f4)           |
+| 18    | [Upgradability](/design-pattern-models/upgradability.md)                               | [View](https://dcrgraphs.net/tool/main/Graph?id=e7ee7bd3-99a3-40a7-bbb7-09e00da6e2c4) | [Run](https://sim.dcrgraphs.net?code=9333f84f-8273-43cb-90a5-e9a61b053bc7)           |
+| 19    | [Governance](/design-pattern-models/governance.md)                                     | [View](https://dcrgraphs.net/tool/main/Graph?id=341dab9d-3bec-4164-80f1-4ee6543863f4) | [Run](https://sim.dcrgraphs.net?code=341dab9d-3bec-4164-80f1-4ee6543863f4)           |
 
 ### 🚀 DCR Graphs as a Formalism For Smart Contract Design Patterns
 
