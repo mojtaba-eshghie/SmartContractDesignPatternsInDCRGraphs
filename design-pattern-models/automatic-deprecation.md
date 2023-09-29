@@ -2,7 +2,7 @@
 
 ## Automatic Deprecation Pattern Description
 
-Oracles enable smart contracts to incorporate off-chain data intheir execution and push information from a blockchain to external systems.The oracle pattern employs an external call to another service smart contract(data source) to register the request for off-chain data. This registration callinformation should also be kept in bookkeeping variables inside the contractitself. When the data is ready in the service contract, it will inform the maincontract about the result by calling a specific callback function. To model this,the callback function of the smart contract is excluded by default and is includedwhen the smart contract calls an oracle.
+TODO: fix this
 
 ## Example Usage
 
