@@ -37,20 +37,15 @@ Design patterns are tried-and-true solutions to recurring problems, acting as te
 Use the following _bibtex_ entry to cite our work:
 
 ```bibtex
-@misc{CaptureSCDesignWithDCR,
-  title = {Capturing {{Smart Contract Design}} with {{DCR Graphs}}},
-  author = {Eshghie, Mojtaba and Ahrendt, Wolfgang and Artho, Cyrille and Hildebrandt, Thomas Troels and Schneider, Gerardo},
-  year = {2023},
-  month = may,
-  number = {arXiv:2305.04581},
-  eprint = {2305.04581},
-  primaryclass = {cs},
-  publisher = {{arXiv}},
-  doi = {10.48550/arXiv.2305.04581},
-  urldate = {2023-08-28},
-  abstract = {Smart contracts manage blockchain assets. While smart contracts embody business processes, their platforms are not process-aware. Mainstream smart contract programming languages such as Solidity do not have explicit notions of roles, action dependencies, and time. Instead, these concepts are implemented in program code. This makes it very hard to design and analyze smart contracts. We argue that DCR graphs are a suitable formalization tool for smart contracts because they explicitly and visually capture these features. We utilize this expressiveness to show that many common high-level design patterns in smart-contract applications can be naturally modeled this way. Applying these patterns shows that DCR graphs facilitate the development and analysis of correct and reliable smart contracts by providing a clear and easy-to-understand specification.},
-  archiveprefix = {arxiv},
-  keywords = {Computer Science - Computers and Society,Computer Science - Formal Languages and Automata Theory,Computer Science - Software Engineering}
+@inproceedings{captureDCR,
+  title={Capturing Smart Contract Design with DCR Graphs},
+  author={Mojtaba Eshghie and Wolfgang Ahrendt and Cyrille Artho and Thomas Troels Hildebrandt and Gerardo Schneider},
+  booktitle={Proceedings of the 21st International Conference on Software Engineering and Formal Methods (SEFM 2023)},
+  year={2023},
+  address={Eindhoven University of Technology, Netherlands},
+  month={November 8--10},
+  organization={Eindhoven University of Technology (TU/e)},
+  abstract={Smart contracts manage blockchain assets and embody business processes. However, mainstream smart contract programming languages such as Solidity lack explicit notions of roles, action dependencies, and time. Instead, these concepts are implemented in program code. This makes it very hard to design and analyze smart contracts. We argue that DCR graphs are a suitable formalization tool for smart contracts because they explicitly and visually capture the mentioned features. We utilize this expressiveness to show that many common high-level design patterns representing the underlying business processes in smart-contract applications can be naturally modeled this way. Applying these patterns shows that DCR graphs facilitate the development and analysis of correct and reliable smart contracts by providing a clear and easy-to-understand specification.},
 }
 ```
 
